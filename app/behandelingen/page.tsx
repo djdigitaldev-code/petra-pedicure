@@ -6,6 +6,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 
 import BookingModal from "../components/BookingModal";
@@ -113,12 +115,12 @@ export default function BehandelingenPage() {
             <div className="flex flex-col">
 
               {[
-                ["Home", "/"],
                 ["Behandelingen", "/behandelingen"],
                 ["Tarieven", "/tarieven"],
                 ["Over", "/over"],
                 ["Contact", "/contact"],
               ].map(([title, link], index) => (
+
                 <a
                   key={index}
                   href={link as string}
@@ -136,6 +138,75 @@ export default function BehandelingenPage() {
                   {title}
                 </a>
               ))}
+
+            </div>
+
+            {/* CONTACT INFO */}
+            <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaPhoneAlt className="text-[#C1978D] text-xl" />
+                <span>06 12 34 56 78</span>
+              </div>
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaEnvelope className="text-[#C1978D] text-xl" />
+                <span>info@petrapedicure.nl</span>
+              </div>
+
+            </div>
+
+            {/* SUBTITLE */}
+            <p
+              className="
+              mt-12
+              text-center
+              uppercase
+              tracking-[0.28em]
+              text-[15px]
+              text-[#C1978D]
+              "
+            >
+              Maak hier een afspraak
+            </p>
+
+            {/* BUTTONS */}
+            <div className="mt-8 flex flex-col gap-5">
+
+              <a
+                href="tel:+31612345678"
+                className="
+                bg-[#D9B0A7]
+                hover:bg-[#c89b91]
+                transition
+                text-white
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                shadow-sm
+                "
+              >
+                Bel direct
+              </a>
+
+              <a
+                href="https://wa.me/31612345678"
+                target="_blank"
+                className="
+                border
+                border-[#B8B89E]
+                text-[#7F7F72]
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                hover:bg-[#F7F4F1]
+                transition
+                "
+              >
+                WhatsApp
+              </a>
 
             </div>
 
@@ -224,130 +295,6 @@ export default function BehandelingenPage() {
             </p>
 
           </div>
-
-          {/* CONTENT BOX */}
-          <div className="bg-white border border-[#EEE8E1] rounded-[2.5rem] p-8 lg:p-14 shadow-sm">
-
-            <div className="space-y-12">
-
-              {/* INTRO */}
-              <div className="text-[#7F7F72] leading-9 text-lg space-y-6">
-
-                <p>
-                  Gun jezelf een moment van ontspanning en professionele verzorging
-                  in jouw vertrouwde omgeving.
-                </p>
-
-                <p>
-                  Goede voetverzorging wordt in de drukte van het dagelijks leven
-                  vaak vergeten, terwijl gezonde en verzorgde voeten juist essentieel zijn
-                  voor comfort en welzijn.
-                </p>
-
-              </div>
-
-              {/* HIGHLIGHTS */}
-              <div className="grid md:grid-cols-3 gap-6">
-
-                <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
-
-                  <div className="text-4xl mb-5">💧</div>
-
-                  <h3 className="text-2xl text-[#6F745C] mb-4">
-                    Moderne nattechniek
-                  </h3>
-
-                  <p className="text-[#7F7F72] leading-8">
-                    Tijdens de behandeling werk ik met moderne nattechniek
-                    waarbij een verkoelende spray zorgt voor minder stofvorming
-                    en extra comfort.
-                  </p>
-
-                </div>
-
-                <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
-
-                  <div className="text-4xl mb-5">✨</div>
-
-                  <h3 className="text-2xl text-[#6F745C] mb-4">
-                    Verzorging & hygiëne
-                  </h3>
-
-                  <p className="text-[#7F7F72] leading-8">
-                    Je voeten worden zorgvuldig gereinigd, gedesinfecteerd
-                    en professioneel behandeld voor optimale verzorging.
-                  </p>
-
-                </div>
-
-                <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
-
-                  <div className="text-4xl mb-5">🤍</div>
-
-                  <h3 className="text-2xl text-[#6F745C] mb-4">
-                    Persoonlijke aandacht
-                  </h3>
-
-                  <p className="text-[#7F7F72] leading-8">
-                    Iedere behandeling wordt rustig en persoonlijk uitgevoerd,
-                    volledig afgestemd op jouw wensen en comfort.
-                  </p>
-
-                </div>
-
-              </div>
-
-              {/* PROBLEMEN */}
-              <div className="bg-gradient-to-br from-[#FCFAF8] to-[#F7F4F1] rounded-[2.5rem] p-10 lg:p-14 border border-[#EEE8E1] shadow-sm">
-
-                <div className="text-center mb-12">
-
-                  <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
-                    Specialistische voetverzorging
-                  </p>
-
-                  <h3 className="text-4xl font-light text-[#6F745C] leading-tight">
-                    Deskundige behandeling van voetklachten
-                  </h3>
-
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
-
-                  {[
-                    "Ingroeiende nagels",
-                    "Kloven",
-                    "Eelt",
-                    "Kalknagels",
-                    "Likdoorns",
-                  ].map((item, index) => (
-
-                    <div
-                      key={index}
-                      className="bg-white rounded-2xl border border-[#EEE8E1] px-6 py-5 flex items-center gap-4 shadow-sm hover:shadow-md transition duration-300"
-                    >
-
-                      <div className="min-w-[12px] min-h-[12px] rounded-full bg-[#D9B0A7] flex-shrink-0"></div>
-
-                      <span className="text-lg text-[#7F7F72]">
-                        {item}
-                      </span>
-
-                    </div>
-
-                  ))}
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
 
       {/* FOOTER */}
       <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">

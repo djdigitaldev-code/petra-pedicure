@@ -6,6 +6,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 
 import BookingModal from "../components/BookingModal";
@@ -113,12 +115,12 @@ export default function TarievenPage() {
             <div className="flex flex-col">
 
               {[
-                ["Home", "/"],
                 ["Behandelingen", "/behandelingen"],
                 ["Tarieven", "/tarieven"],
                 ["Over", "/over"],
                 ["Contact", "/contact"],
               ].map(([title, link], index) => (
+
                 <a
                   key={index}
                   href={link as string}
@@ -136,6 +138,75 @@ export default function TarievenPage() {
                   {title}
                 </a>
               ))}
+
+            </div>
+
+            {/* CONTACT INFO */}
+            <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaPhoneAlt className="text-[#C1978D] text-xl" />
+                <span>06 12 34 56 78</span>
+              </div>
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaEnvelope className="text-[#C1978D] text-xl" />
+                <span>info@petrapedicure.nl</span>
+              </div>
+
+            </div>
+
+            {/* SUBTITLE */}
+            <p
+              className="
+              mt-12
+              text-center
+              uppercase
+              tracking-[0.28em]
+              text-[15px]
+              text-[#C1978D]
+              "
+            >
+              Maak hier een afspraak
+            </p>
+
+            {/* BUTTONS */}
+            <div className="mt-8 flex flex-col gap-5">
+
+              <a
+                href="tel:+31612345678"
+                className="
+                bg-[#D9B0A7]
+                hover:bg-[#c89b91]
+                transition
+                text-white
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                shadow-sm
+                "
+              >
+                Bel direct
+              </a>
+
+              <a
+                href="https://wa.me/31612345678"
+                target="_blank"
+                className="
+                border
+                border-[#B8B89E]
+                text-[#7F7F72]
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                hover:bg-[#F7F4F1]
+                transition
+                "
+              >
+                WhatsApp
+              </a>
 
             </div>
 
@@ -217,65 +288,6 @@ export default function TarievenPage() {
 
               <button
                 onClick={() => setSelectedTreatment("Pedicure Basis")}
-                className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
-              >
-                Maak afspraak
-              </button>
-
-            </div>
-
-            {/* DELUXE */}
-            <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 relative overflow-hidden flex flex-col justify-between">
-
-              <div>
-
-                <div className="absolute top-0 right-0 bg-[#D9B0A7] text-white px-6 py-2 rounded-bl-[1.5rem] text-sm uppercase tracking-[0.15em]">
-                  Populair
-                </div>
-
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
-
-                  <div>
-
-                    <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                      Pedicure Deluxe
-                    </h3>
-
-                    <p className="text-[#7F7F72]">
-                      50 – 65 minuten
-                    </p>
-
-                  </div>
-
-                  <div className="text-right">
-
-                    <p className="text-4xl text-[#C1978D] font-light">
-                      €70
-                    </p>
-
-                    <p className="text-sm text-[#7F7F72]">
-                      per persoon
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div className="space-y-4 text-[#7F7F72] mb-10">
-
-                  <div>• Complete pedicurebehandeling</div>
-                  <div>• Verwijderen van eelt & drukplekken</div>
-                  <div>• Verzorgen van ruwe huid & kloven</div>
-                  <div>• Scrubbehandeling</div>
-                  <div>• Ontspannende voet- en onderbeenmassage</div>
-                  <div>• Intensieve verzorging met voedende crème</div>
-
-                </div>
-
-              </div>
-
-              <button
-                onClick={() => setSelectedTreatment("Pedicure Deluxe")}
                 className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
               >
                 Maak afspraak

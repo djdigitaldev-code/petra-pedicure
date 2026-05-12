@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
+
 export default function Annuleringsbeleid() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -128,6 +133,75 @@ export default function Annuleringsbeleid() {
                   {title}
                 </a>
               ))}
+
+            </div>
+
+            {/* CONTACT INFO */}
+            <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaPhoneAlt className="text-[#C1978D] text-xl" />
+                <span>06 12 34 56 78</span>
+              </div>
+
+              <div className="flex items-center gap-4 text-[18px]">
+                <FaEnvelope className="text-[#C1978D] text-xl" />
+                <span>info@petrapedicure.nl</span>
+              </div>
+
+            </div>
+
+            {/* SUBTITLE */}
+            <p
+              className="
+              mt-12
+              text-center
+              uppercase
+              tracking-[0.28em]
+              text-[15px]
+              text-[#C1978D]
+              "
+            >
+              Maak hier een afspraak
+            </p>
+
+            {/* BUTTONS */}
+            <div className="mt-8 flex flex-col gap-5">
+
+              <a
+                href="tel:+31612345678"
+                className="
+                bg-[#D9B0A7]
+                hover:bg-[#c89b91]
+                transition
+                text-white
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                shadow-sm
+                "
+              >
+                Bel direct
+              </a>
+
+              <a
+                href="https://wa.me/31612345678"
+                target="_blank"
+                className="
+                border
+                border-[#B8B89E]
+                text-[#7F7F72]
+                text-center
+                py-5
+                rounded-full
+                text-xl
+                hover:bg-[#F7F4F1]
+                transition
+                "
+              >
+                WhatsApp
+              </a>
 
             </div>
 
