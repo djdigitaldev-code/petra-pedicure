@@ -2,13 +2,11 @@
 
 import { useState } from "react";
 
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function VoorwaardenPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className="min-h-screen bg-[#F7F4F1] text-[#6F745C] overflow-x-hidden">
@@ -145,7 +143,7 @@ export default function VoorwaardenPage() {
               </div>
 
               <div className="flex items-center gap-4 text-[18px]">
-                <FaEnvelope className="text-[#C1978D] text-xl" />
+                <MdEmail className="text-[#C1978D] text-xl" />
                 <span>info@petrapedicure.nl</span>
               </div>
 
