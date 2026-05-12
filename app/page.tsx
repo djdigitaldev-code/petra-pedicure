@@ -154,9 +154,9 @@ export default function Home() {
       {/* HERO */}
       <section className="relative pt-[130px] pb-20 px-6 lg:px-20 bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
-        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[20px] rounded-full"></div>
+        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-15 blur-[60px] rounded-full"></div>
 
-        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[20px] rounded-full"></div>
+        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-20 blur-[60px] rounded-full"></div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
@@ -1186,78 +1186,89 @@ Met vriendelijke groet,`
   </div>
 )}
 
-      {/* FOOTER */}
-      <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
+```tsx
+{/* FOOTER */}
+<footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
 
-        <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+  <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
-          <h3 className="text-4xl text-[#C1978D] font-light">
-            Petra Pedicure
-          </h3>
+    <h3 className="text-4xl text-[#C1978D] font-light">
+      Petra Pedicure
+    </h3>
 
-          <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
-            Professionele pedicure aan huis in Almere en omstreken
-          </p>
+    <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
+      Professionele pedicure aan huis in Almere en omstreken
+    </p>
 
-          <div className="mt-8 flex gap-8 text-3xl text-[#AEB49A]">
+    {/* SOCIALS */}
+    <div className="mt-8 flex items-center justify-center gap-8 text-3xl text-[#AEB49A]">
 
-          <a href="#"
-            className="hover:text-[#C1978D] hover:scale-110 transition duration-300">
-              <FaFacebookF />
-            </a>
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaFacebookF />
+      </a>
 
-            <a href="#"
-            className="hover:text-[#C1978D] hover:scale-110 transition duration-300">
-              <FaInstagram />
-            </a>
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaInstagram />
+      </a>
 
-            <a href="#"
-            className="hover:text-[#C1978D] hover:scale-110 transition duration-300">
-              <FaLinkedinIn />
-            </a>
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaLinkedinIn />
+      </a>
 
-          </div>
+    </div>
 
-        </div>
+    {/* LINKS */}
+    <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-sm text-[#8A8A80] text-center">
 
-        <div className="mt-6 flex items-center justify-center gap-5 text-sm text-[#8A8A80]">
+      <a
+        href="/annuleringsbeleid"
+        className="hover:text-[#C1978D] transition"
+      >
+        Annuleringsbeleid
+      </a>
 
-  <a
-    href="/annuleringsbeleid"
-    className="hover:text-[#C1978D] transition"
-  >
-    Annuleringsbeleid
-  </a>
+      <span className="hidden sm:block">•</span>
 
-  <span>•</span>
+      <a
+        href="/voorwaarden"
+        className="hover:text-[#C1978D] transition"
+      >
+        Algemene voorwaarden
+      </a>
 
-  <a
-    href="/voorwaarden"
-    className="hover:text-[#C1978D] transition"
-  >
-    Algemene voorwaarden
-  </a>
+    </div>
 
-</div>
+  </div>
 
-        <div className="mt-12 pt-8 border-t border-[#E5DDD5] text-center max-w-3xl mx-auto">
+  {/* SEO TEKST */}
+  <div className="mt-12 pt-8 border-t border-[#E5DDD5] text-center max-w-3xl mx-auto">
 
-<p className="text-sm leading-7 text-[#8A8A80]">
-Petra Pedicure biedt professionele pedicure aan huis in Almere en omgeving.
-Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns behandelen,
-kalknagels verzorgen, spa voetbehandelingen en ontspannende voetmassages.
-</p>
+    <p className="text-sm leading-7 text-[#8A8A80]">
+      Petra Pedicure biedt professionele pedicure aan huis in Almere en omgeving.
+      Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns behandelen,
+      kalknagels verzorgen, spa voetbehandelingen en ontspannende voetmassages.
+    </p>
 
-</div>
+  </div>
 
-        <div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center text-sm text-[#9A9A90]">
+  {/* COPYRIGHT */}
+  <div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center text-sm text-[#9A9A90]">
 
-          © 2026 Petra Pedicure • Alle rechten voorbehouden
+    © 2026 Petra Pedicure • Alle rechten voorbehouden
 
-        </div>
+  </div>
 
-      </footer>
-
+</footer>
+```
     </main>
   );
 }
