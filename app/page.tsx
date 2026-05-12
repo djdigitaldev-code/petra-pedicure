@@ -86,7 +86,7 @@ export default function Home() {
         <>
           <div
             onClick={() => setMenuOpen(false)}
-            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+            className="fixed inset-0 bg-black/20 z-[9998]"
           />
 
           <div className="md:hidden fixed top-[78px] left-4 right-4 bg-[#FCFAF8] border border-[#E8E2DC] rounded-[2rem] shadow-2xl z-[9999] p-6">
@@ -1104,7 +1104,7 @@ export default function Home() {
 
     <div
       onClick={() => setSelectedTreatment(null)}
-      className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+      className="absolute inset-0 bg-black/40"
     />
 
     <div className="relative bg-white w-full max-w-2xl rounded-[2.5rem] p-8 lg:p-12 shadow-2xl border border-[#EEE8E1]">
