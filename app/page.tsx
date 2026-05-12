@@ -19,7 +19,7 @@ export default function Home() {
     >
 
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#F7F4F1]/90 backdrop-blur-md border-b border-[#E8E2DC] px-4 lg:px-20 py-3 lg:py-5">
+      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#F7F4F1] border-b border-[#E8E2DC] px-4 lg:px-20 py-3 lg:py-5">
 
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
@@ -154,9 +154,9 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center px-6 lg:px-20 pt-[130px] pb-20 overflow-x-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
-        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[50px] rounded-full"></div>
+        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[20px] rounded-full"></div>
 
-        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[50px] rounded-full"></div>
+        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[20px] rounded-full"></div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
 
