@@ -1,9 +1,15 @@
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
 import {
   Cormorant_Garamond,
   Nunito,
 } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+});
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],

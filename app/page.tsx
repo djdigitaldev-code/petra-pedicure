@@ -35,10 +35,9 @@ export default function Home() {
               className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"
             />
 
-            <span
-              className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
+<span
+  className={`${cormorant.className} text-[26px] lg:text-[48px] text-[#C1978D] font-light tracking-[0.01em]`}
+>
               Petra Pedicure
             </span>
           </a>
@@ -154,9 +153,9 @@ export default function Home() {
       {/* HERO */}
       <section className="relative pt-[130px] pb-20 px-6 lg:px-20 bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
-<div className="absolute top-[-120px] left-[-120px] w-[280px] h-[280px] bg-[#E7C7BF] opacity-8 blur-[80px] rounded-full"></div>
+<div className="absolute top-[-260px] left-[-260px] w-[520px] h-[520px] bg-[#E7C7BF] opacity-[0.025] blur-[180px] rounded-full pointer-events-none"></div>
 
-<div className="absolute bottom-[-120px] right-[-120px] w-[280px] h-[280px] bg-[#DDE3D0] opacity-10 blur-[80px] rounded-full"></div>
+<div className="absolute bottom-[-260px] right-[-260px] w-[520px] h-[520px] bg-[#DDE3D0] opacity-[0.03] blur-[180px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
@@ -1191,7 +1190,8 @@ Met vriendelijke groet,`
 
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
-   <h3 className="text-5xl text-[#C1978D] font-light tracking-[0.04em]">
+ <h3
+  className={`${cormorant.className} text-5xl lg:text-6xl text-[#C1978D] font-light tracking-[0.01em]`}>
       Petra Pedicure
     </h3>
 
