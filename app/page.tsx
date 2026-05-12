@@ -10,7 +10,6 @@ import {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
 
   return (
     <main
@@ -81,75 +80,136 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* MOBILE MENU */}
-      {menuOpen && (
-        <>
-          <div
+{/* MOBILE MENU */}
+{menuOpen && (
+  <>
+    {/* OVERLAY */}
+    <div
+      onClick={() => setMenuOpen(false)}
+      className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+    />
+
+    {/* MENU */}
+    <div
+      className="
+      md:hidden
+      fixed
+      top-[95px]
+      left-1/2
+      -translate-x-1/2
+      w-[92%]
+      bg-[#FCFAF8]/95
+      backdrop-blur-xl
+      border border-[#ECE6DF]
+      rounded-[2.7rem]
+      shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+      z-[9999]
+      px-8
+      py-8
+      "
+    >
+
+      {/* NAV LINKS */}
+      <div className="flex flex-col">
+
+        {[
+          ["Behandelingen", "#behandelingen"],
+          ["Tarieven", "#tarieven"],
+          ["Over", "#over"],
+          ["Contact", "#contact"],
+        ].map(([title, link], index) => (
+          <a
+            key={index}
+            href={link}
             onClick={() => setMenuOpen(false)}
-            className="fixed inset-0 bg-black/20 z-[9998]"
-          />
+            className="
+            py-7
+            border-b
+            border-[#EEE8E1]
+            uppercase
+            tracking-[0.22em]
+            text-[15px]
+            text-[#7F7F72]
+            "
+          >
+            {title}
+          </a>
+        ))}
 
-          <div className="md:hidden fixed top-[78px] left-4 right-4 bg-[#FCFAF8] border border-[#E8E2DC] rounded-[2rem] shadow-2xl z-[9999] p-6">
+      </div>
 
-            <div className="flex flex-col">
+      {/* CONTACT INFO */}
+      <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
 
-              <a
-                href="#behandelingen"
-                onClick={() => setMenuOpen(false)}
-                className="py-4 border-b border-[#ECE6DF] uppercase tracking-[0.12em] text-[15px]"
-              >
-                Behandelingen
-              </a>
+        <div className="flex items-center gap-4 text-[18px]">
+          <span className="text-2xl">📞</span>
+          <span>06 12 34 56 78</span>
+        </div>
 
-              <a
-                href="#tarieven"
-                onClick={() => setMenuOpen(false)}
-                className="py-4 border-b border-[#ECE6DF] uppercase tracking-[0.12em] text-[15px]"
-              >
-                Tarieven
-              </a>
+        <div className="flex items-center gap-4 text-[18px]">
+          <span className="text-2xl">✉️</span>
+          <span>info@petrapedicure.nl</span>
+        </div>
 
-              <a
-                href="#over"
-                onClick={() => setMenuOpen(false)}
-                className="py-4 border-b border-[#ECE6DF] uppercase tracking-[0.12em] text-[15px]"
-              >
-                Over
-              </a>
+      </div>
 
-              <a
-                href="#contact"
-                onClick={() => setMenuOpen(false)}
-                className="py-4 border-b border-[#ECE6DF] uppercase tracking-[0.12em] text-[15px]"
-              >
-                Contact
-              </a>
+      {/* SUBTITLE */}
+      <p
+        className="
+        mt-12
+        text-center
+        uppercase
+        tracking-[0.28em]
+        text-[15px]
+        text-[#C1978D]
+        "
+      >
+        Maak hier een afspraak
+      </p>
 
-            </div>
+      {/* BUTTONS */}
+      <div className="mt-8 flex flex-col gap-5">
 
-            {/* CTA */}
-            <div className="mt-8 flex flex-col gap-4">
+        <a
+          href="tel:+31612345678"
+          className="
+          bg-[#D9B0A7]
+          hover:bg-[#c89b91]
+          transition
+          text-white
+          text-center
+          py-5
+          rounded-full
+          text-xl
+          shadow-sm
+          "
+        >
+          Bel direct
+        </a>
 
-              <a
-                href="tel:+31612345678"
-                className="bg-[#D9B0A7] text-white text-center py-4 rounded-full text-lg"
-              >
-                Bel direct
-              </a>
+        <a
+          href="https://wa.me/31612345678"
+          target="_blank"
+          className="
+          border
+          border-[#B8B89E]
+          text-[#7F7F72]
+          text-center
+          py-5
+          rounded-full
+          text-xl
+          hover:bg-[#F7F4F1]
+          transition
+          "
+        >
+          WhatsApp
+        </a>
 
-              <a
-                href="https://wa.me/31612345678"
-                target="_blank"
-                className="border border-[#B8B89E] text-[#7F7F72] text-center py-4 rounded-full text-lg"
-              >
-                WhatsApp
-              </a>
+      </div>
 
-            </div>
-
-          </div>
-        </>
-      )}
+    </div>
+  </>
+)}
 
       {/* HERO */}
       <section className="relative pt-[130px] pb-20 px-6 lg:px-20 bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
@@ -411,7 +471,7 @@ export default function Home() {
         className="bg-white rounded-2xl border border-[#EEE8E1] px-6 py-5 flex items-center gap-4 shadow-sm hover:shadow-md transition duration-300"
       >
 
-        <div className="w-3 h-3 rounded-full bg-[#D9B0A7]"></div>
+        <div className="min-w-[12px] min-h-[12px] rounded-full bg-[#D9B0A7] flex-shrink-0"></div>
 
         <span className="text-lg text-[#7F7F72]">
           {item}
@@ -472,456 +532,6 @@ export default function Home() {
         </div>
 
       </section>
-
-{/* TARIEVEN */}
-<section
-  id="tarieven"
-  className="py-24 px-6 lg:px-20 bg-[#FCFAF8]"
->
-
-  <div className="max-w-7xl mx-auto">
-
-    {/* TITEL */}
-    <div className="text-center mb-20">
-
-      <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
-        Behandelingen & tarieven
-      </p>
-
-      <h2 className="text-5xl font-light mb-8">
-        Professionele verzorging met aandacht
-      </h2>
-
-      <p className="text-lg leading-9 text-[#7F7F72] max-w-3xl mx-auto">
-        Ontspannende en professionele voetverzorging aan huis,
-        afgestemd op jouw wensen en comfort.
-      </p>
-
-    </div>
-
-    {/* HOOFDBEHANDELINGEN */}
-    <div className="grid lg:grid-cols-2 gap-8">
-
-      {/* BASIS */}
-      <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
-
-        <div>
-
-          <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
-
-            <div>
-
-              <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                Pedicure Basis
-              </h3>
-
-              <p className="text-[#7F7F72]">
-                30 – 45 minuten
-              </p>
-
-            </div>
-
-            <div className="text-right">
-
-              <p className="text-4xl text-[#C1978D] font-light">
-                €50
-              </p>
-
-              <p className="text-sm text-[#7F7F72]">
-                per persoon
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-[#7F7F72] leading-8 mb-8">
-            Een complete basisbehandeling voor gezonde,
-            verzorgde en comfortabele voeten.
-          </p>
-
-          <div className="space-y-4 text-[#7F7F72] mb-10">
-
-            <div>• Desinfecteren van de voeten</div>
-            <div>• Knippen en verzorgen van de teennagels</div>
-            <div>• Reinigen van de nagelomgeving</div>
-            <div>• Verwijderen van eelt en likdoorns</div>
-            <div>• Behandelen van kloven en drukplekken</div>
-            <div>• Verzorgende crème</div>
-
-          </div>
-
-        </div>
-
-        <button
-          onClick={() => setSelectedTreatment("Pedicure Basis")}
-          className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
-        >
-          Maak afspraak
-        </button>
-
-      </div>
-
-      {/* DELUXE */}
-      <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 relative overflow-hidden flex flex-col justify-between">
-
-        <div>
-
-          <div className="absolute top-0 right-0 bg-[#D9B0A7] text-white px-6 py-2 rounded-bl-[1.5rem] text-sm uppercase tracking-[0.15em]">
-            Populair
-          </div>
-
-          <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
-
-            <div>
-
-              <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                Pedicure Deluxe
-              </h3>
-
-              <p className="text-[#7F7F72]">
-                50 – 65 minuten
-              </p>
-
-            </div>
-
-            <div className="text-right">
-
-              <p className="text-4xl text-[#C1978D] font-light">
-                €70
-              </p>
-
-              <p className="text-sm text-[#7F7F72]">
-                per persoon
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-[#7F7F72] leading-8 mb-8">
-            Luxe en uitgebreide voetverzorging inclusief ontspannende massage.
-          </p>
-
-          <div className="space-y-4 text-[#7F7F72] mb-10">
-
-            <div>• Complete pedicurebehandeling</div>
-            <div>• Verwijderen van eelt & drukplekken</div>
-            <div>• Verzorgen van ruwe huid & kloven</div>
-            <div>• Scrubbehandeling</div>
-            <div>• Ontspannende voet- en onderbeenmassage</div>
-            <div>• Intensieve verzorging met voedende crème</div>
-
-          </div>
-
-        </div>
-
-        <button
-          onClick={() => setSelectedTreatment("Pedicure Deluxe")}
-          className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
-        >
-          Maak afspraak
-        </button>
-
-      </div>
-
-      {/* SPA */}
-      <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
-
-        <div>
-
-          <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
-
-            <div>
-
-              <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                Spa Behandeling
-              </h3>
-
-              <p className="text-[#7F7F72]">
-                30 minuten
-              </p>
-
-            </div>
-
-            <div className="text-right">
-
-              <p className="text-4xl text-[#C1978D] font-light">
-                €40
-              </p>
-
-              <p className="text-sm text-[#7F7F72]">
-                per persoon
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-[#7F7F72] leading-8 mb-8">
-            Ontspannende wellness behandeling voor voeten en onderbenen
-            met natuurlijke spa verzorging.
-          </p>
-
-          <div className="space-y-4 text-[#7F7F72] mb-10">
-
-            <div>• Warm voetenbad met Dead Sea Salt</div>
-            <div>• Sugar Scrub exfoliatie</div>
-            <div>• Moisture Mask hydratatie</div>
-            <div>• Ontspannende massage</div>
-            <div>• Botanische & natuurlijke ingrediënten</div>
-
-          </div>
-
-        </div>
-
-        <button
-          onClick={() => setSelectedTreatment("Spa Behandeling")}
-          className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
-        >
-          Maak afspraak
-        </button>
-
-      </div>
-
-      {/* SPA + PEDICURE */}
-      <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
-
-        <div>
-
-          <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
-
-            <div>
-
-              <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                Spa + Pedicure
-              </h3>
-
-              <p className="text-[#7F7F72]">
-                60 minuten
-              </p>
-
-            </div>
-
-            <div className="text-right">
-
-              <p className="text-4xl text-[#C1978D] font-light">
-                €80
-              </p>
-
-              <p className="text-sm text-[#7F7F72]">
-                per persoon
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-[#7F7F72] leading-8 mb-8">
-            Complete wellness behandeling inclusief pedicure,
-            spa verzorging en ontspannende massage.
-          </p>
-
-          <div className="space-y-4 text-[#7F7F72] mb-10">
-
-            <div>• Basis pedicure behandeling</div>
-            <div>• Warm spa voetenbad</div>
-            <div>• Sugar scrub & hydratatie</div>
-            <div>• Massage voeten & onderbenen</div>
-            <div>• Vermindert stress & spierspanning</div>
-
-          </div>
-
-        </div>
-
-        <button
-          onClick={() => setSelectedTreatment("Spa + Pedicure")}
-          className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
-        >
-          Maak afspraak
-        </button>
-
-      </div>
-
-    </div>
-  
-  {/* DEELBEHANDELINGEN */}
-<div className="mt-14 bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 lg:p-14 shadow-sm">
-
-<div className="text-center mb-10">
-
-  <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
-    Aanvullende behandelingen
-  </p>
-
-  <h3 className="text-4xl font-light text-[#6F745C]">
-    Specifieke deelbehandelingen
-  </h3>
-
-</div>
-
-<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-  {[
-    ["Likdoorn verwijderen", "€25"],
-    ["Ingroeiende nagel behandelen", "€25"],
-    ["Kloof behandelen", "€25"],
-    ["Eelt verwijderen", "€25"],
-    ["Onderbeen & voetmassage", "€20"],
-    ["Meerprijs per 15 minuten", "€20"],
-  ].map(([title, price], index) => (
-
-    <div
-      key={index}
-      className="bg-[#FCFAF8] rounded-2xl border border-[#EEE8E1] px-6 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition duration-300"
-    >
-
-      <div className="flex items-center gap-4">
-
-        <div className="w-3 h-3 rounded-full bg-[#D9B0A7]"></div>
-
-        <span className="text-lg text-[#7F7F72]">
-          {title}
-        </span>
-
-      </div>
-
-      <span className="text-[#C1978D] text-xl font-light">
-        {price}
-      </span>
-
-    </div>
-
-  ))}
-
-</div>
-
-</div>
-
-{/* EXTRA INFO BLOKKEN */}
-<div className="grid lg:grid-cols-3 gap-8 mt-12">
-
-  {/* STAFFELKORTING */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm hover:shadow-xl transition duration-300">
-
-  <div className="mb-6 text-center">
-
-<h3 className="text-3xl font-light text-[#6F745C]">
-        Staffelkorting
-      </h3>
-
-    </div>
-
-    <div className="space-y-5">
-
-      {[
-        "1 klant: €50 p.p.",
-        "2–3 klanten: €45 p.p.",
-        "4+ klanten: €40 p.p.",
-      ].map((item, index) => (
-
-        <div
-          key={index}
-          className="bg-[#FCFAF8] rounded-2xl border border-[#EEE8E1] px-5 py-4 flex items-center gap-4 shadow-sm hover:shadow-md transition duration-300"
-        >
-
-          <div className="w-3 h-3 rounded-full bg-[#D9B0A7]"></div>
-
-          <span className="text-[#7F7F72] text-lg">
-            {item}
-          </span>
-
-        </div>
-
-      ))}
-
-    </div>
-
-  </div>
-
-  {/* TERUGKOMACTIE */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm hover:shadow-xl transition duration-300">
-
-  <div className="mb-6 text-center">
-
-<h3 className="text-3xl font-light text-[#6F745C]">
-        Terugkomactie
-      </h3>
-
-    </div>
-
-    <div className="bg-[#FCFAF8] rounded-2xl border border-[#EEE8E1] px-6 py-5 shadow-sm hover:shadow-md transition duration-300">
-
-      <p className="text-[#7F7F72] leading-8 text-lg">
-        Als dank voor het vertrouwen ontvangen vaste klanten
-        20% korting op de 8e afspraak.
-      </p>
-
-    </div>
-
-  </div>
-
-  {/* REISKOSTEN */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm hover:shadow-xl transition duration-300">
-
-  <div className="mb-6 text-center">
-
-<h3 className="text-3xl font-light text-[#6F745C]">
-        Reiskosten
-      </h3>
-
-    </div>
-
-    <div className="bg-[#FCFAF8] rounded-2xl border border-[#EEE8E1] px-6 py-5 shadow-sm hover:shadow-md transition duration-300">
-
-      <p className="text-[#7F7F72] leading-8 text-lg">
-        Binnen 20 km zijn reiskosten inbegrepen.
-        Daarna geldt €0,50 per kilometer.
-        Behandelingen buiten Almere zijn bespreekbaar.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-    {/* KLEINE INFO */}
-    <div className="mt-16 pt-10 border-t border-[#E8E2DC] text-center max-w-4xl mx-auto">
-
-      <p className="text-[#7F7F72] leading-8 text-lg">
-
-        Bij het maken van een afspraak ga je akkoord met het{" "}
-
-        <a
-          href="/annuleringsbeleid"
-          className="inline-block text-[#C1978D] hover:text-[#b57f73] transition underline underline-offset-4"
-        >
-          annuleringsbeleid
-        </a>
-
-        {" "}en de{" "}
-
-        <a
-          href="/voorwaarden"
-          className="inline-block text-[#C1978D] hover:text-[#b57f73] transition underline underline-offset-4"
-        >
-          algemene voorwaarden
-        </a>
-
-        <br />
-
-        <span className="text-[#9A9A90] text-base">
-          van Petra Pedicure aan huis.
-        </span>
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
 
 {/* OVER */}
 <section
@@ -1054,137 +664,6 @@ export default function Home() {
   </div>
 
 </section>
-
-{/* CONTACT */}
-<section
-  id="contact"
-  className="px-6 lg:px-20 pb-24 bg-[#FCFAF8]"
->
-
-  <div className="max-w-5xl mx-auto bg-[#AEB49A] rounded-[3rem] p-12 lg:p-16 text-center text-white shadow-2xl">
-
-    <p className="uppercase tracking-[0.3em] text-sm text-white/80 mb-4">
-      Contact
-    </p>
-
-    <h2 className="text-5xl font-light mb-6">
-      Gun jouw voeten de aandacht die ze verdienen
-    </h2>
-
-    <p className="text-lg leading-9 max-w-2xl mx-auto text-white/90 mb-10">
-      Neem eenvoudig contact op voor een afspraak aan huis in Almere en omstreken.
-    </p>
-
-    <div className="flex flex-wrap justify-center gap-4">
-
-      <a
-        href="tel:+31612345678"
-        className="bg-white text-[#6F745C] px-8 py-4 rounded-full text-lg hover:scale-105 hover:bg-[#F7F4F1] transition duration-300 shadow-lg"
-      >
-        Bel direct
-      </a>
-
-      <a
-        href="https://wa.me/31612345678"
-        target="_blank"
-        className="border border-white px-8 py-4 rounded-full text-lg hover:bg-white/10 hover:scale-105 transition duration-300"
-      >
-        WhatsApp
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-{/* BOEKINGS MODAL */}
-{selectedTreatment && (
-  <div className="fixed inset-0 z-[99999] flex items-center justify-center px-6">
-
-    <div
-      onClick={() => setSelectedTreatment(null)}
-      className="absolute inset-0 bg-black/40"
-    />
-
-    <div className="relative bg-white w-full max-w-2xl rounded-[2.5rem] p-8 lg:p-12 shadow-2xl border border-[#EEE8E1]">
-
-      <button
-        onClick={() => setSelectedTreatment(null)}
-        className="absolute top-6 right-6 text-3xl text-[#7F7F72]"
-      >
-        ✕
-      </button>
-
-      <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
-        Afspraak aanvragen
-      </p>
-
-      <h2 className="text-4xl font-light text-[#6F745C] mb-6">
-        {selectedTreatment}
-      </h2>
-
-      <p className="text-[#7F7F72] leading-8 text-lg mb-10">
-        Kies hoe je jouw afspraak wilt aanvragen.
-      </p>
-
-      <div className="flex flex-col gap-5">
-
-        <a
-          href={`https://wa.me/31612345678?text=${encodeURIComponent(
-`Hallo Petra,
-
-Ik wil graag een afspraak maken voor:
-
-• ${selectedTreatment}
-
-Mijn gegevens:
-Naam:
-Adres:
-Telefoonnummer:
-
-Voorkeursdatum:
-Voorkeurstijd:
-
-Met vriendelijke groet,`
-          )}`}
-          target="_blank"
-          className="bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white text-center py-5 rounded-full text-lg"
-        >
-          Afspraak via WhatsApp
-        </a>
-
-        <a
-          href={`mailto:info@petrapedicure.nl?subject=${encodeURIComponent(
-            `Afspraak aanvraag ${selectedTreatment}`
-          )}&body=${encodeURIComponent(
-`Hallo Petra,
-
-Ik wil graag een afspraak maken voor:
-
-• ${selectedTreatment}
-
-Mijn gegevens:
-Naam:
-Adres:
-Telefoonnummer:
-
-Voorkeursdatum:
-Voorkeurstijd:
-
-Met vriendelijke groet,`
-          )}`}
-          className="border border-[#AEB49A] text-[#6F745C] text-center py-5 rounded-full text-lg hover:bg-[#EEF0E7] transition"
-        >
-          Afspraak via e-mail
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-)}
 
 {/* FOOTER */}
 <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
