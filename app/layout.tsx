@@ -17,6 +17,14 @@ const nunito = Nunito({
   variable: "--font-nunito",
 });
 
+import { Cormorant_Garamond } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-heading",
+});
+
 export const metadata: Metadata = {
   title: "Petra Pedicure",
   description: "Professionele pedicure aan huis in Almere",
@@ -29,9 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl">
-      <body
-        className={`${cormorant.variable} ${nunito.variable}`}
-      >
+      <body className={cormorant.variable}>
         {children}
       </body>
     </html>
