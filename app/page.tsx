@@ -152,7 +152,7 @@ export default function Home() {
       )}
 
       {/* HERO */}
-      <section className="relative pt-[130px] pb-20 px-6 lg:px-20 overflow-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
+      <section className="relative pt-[130px] pb-20 px-6 lg:px-20 bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
         <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[20px] rounded-full"></div>
 
@@ -934,10 +934,10 @@ export default function Home() {
     {/* IMAGE */}
     <div className="relative">
 
-      <div className="sticky top-32">
+      <div>
 
         <img
-          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop"
           alt="Petra Pedicure aan huis"
           className="rounded-[2.5rem] shadow-2xl object-cover h-[720px] w-full"
         />
