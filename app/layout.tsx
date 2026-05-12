@@ -1,6 +1,7 @@
-import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
 import {
   Cormorant_Garamond,
   Nunito,
@@ -8,27 +9,14 @@ import {
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
-  variable: "--font-cormorant",
+  variable: "--font-heading",
 });
 
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
-  variable: "--font-nunito",
-});
-
-import { Cormorant_Garamond } from "next/font/google";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-heading",
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -39,11 +27,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <html lang="nl">
-      <body className={cormorant.variable}>
+    <html
+      lang="nl"
+      className={`${cormorant.variable} ${nunito.variable}`}
+    >
+      <body>
         {children}
       </body>
     </html>

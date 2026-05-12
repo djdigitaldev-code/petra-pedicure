@@ -24,23 +24,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
           {/* LOGO */}
-          <a
-            href="#top"
-            onClick={() => setMenuOpen(false)}
-            className="flex items-center gap-3"
-          >
-            <img
-              src="/logo.jpg"
-              alt="Petra Pedicure Logo"
-              className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"
-            />
-
-<span
-  className={`${cormorant.className} text-[26px] lg:text-[48px] text-[#C1978D] font-light tracking-[0.01em]`}
+<a
+  href="#top"
+  onClick={() => setMenuOpen(false)}
+  className="flex items-center gap-3"
 >
-              Petra Pedicure
-            </span>
-          </a>
+  <img
+    src="/logo.jpg"
+    alt="Petra Pedicure Logo"
+    className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"
+  />
+
+  <span
+    className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+    style={{ fontFamily: "var(--font-heading)" }}
+  >
+    Petra Pedicure
+  </span>
+</a>
 
           {/* MOBILE BUTTON */}
           <button
@@ -1190,10 +1191,12 @@ Met vriendelijke groet,`
 
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
- <h3
-  className={`${cormorant.className} text-5xl lg:text-6xl text-[#C1978D] font-light tracking-[0.01em]`}>
-      Petra Pedicure
-    </h3>
+<span
+  className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+  style={{ fontFamily: "var(--font-heading)" }}
+>
+  Petra Pedicure
+</span>
 
     <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
       Professionele pedicure aan huis in Almere en omstreken
