@@ -1272,7 +1272,6 @@ Met vriendelijke groet,`
   </div>
 
 </footer>
-```
 
     </main>
   );
