@@ -45,14 +45,16 @@ export default function Home() {
 </a>
 
           {/* MOBILE BUTTON */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-[#6F745C]"
-          >
-            <span className="text-4xl leading-none">
-              {menuOpen ? "✕" : "☰"}
-            </span>
-          </button>
+<button
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="md:hidden text-[#6F745C] relative z-[10001]"
+  aria-label="Menu openen"
+  type="button"
+>
+  <span className="text-4xl leading-none">
+    {menuOpen ? "✕" : "☰"}
+  </span>
+</button>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
@@ -88,7 +90,7 @@ export default function Home() {
     {/* OVERLAY */}
     <div
       onClick={() => setMenuOpen(false)}
-      className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+      className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9990]"
     />
 
     {/* MENU */}
@@ -105,7 +107,7 @@ export default function Home() {
       border border-[#ECE6DF]
       rounded-[2.7rem]
       shadow-[0_25px_70px_rgba(0,0,0,0.08)]
-      z-[9999]
+      z-[10000]
       px-8
       py-8
       "
@@ -142,12 +144,12 @@ export default function Home() {
 <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
 
   <div className="flex items-center gap-4 text-[18px]">
-    <FaPhoneAlt className="text-[#C1978D] text-xl" />
+    <FaPhoneAlt size={20} color="#C1978D" />
     <span>06 12 34 56 78</span>
   </div>
 
   <div className="flex items-center gap-4 text-[18px]">
-    <FaEnvelope className="text-[#C1978D] text-xl" />
+    <FaEnvelope size={20} color="#C1978D" />
     <span>info@petrapedicure.nl</span>
   </div>
 
