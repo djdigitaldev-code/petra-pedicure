@@ -278,7 +278,7 @@ export default function Home() {
               "
             >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
+              <div className="w-20 h-20 mx-auto rounded-full bg-white/15 flex items-center justify-center text-3xl mb-6">
                 <FaPhoneAlt />
               </div>
 
@@ -293,8 +293,8 @@ export default function Home() {
               <span
   className="
   inline-block
-  bg-[#6F745C]
-  hover:bg-[#5f6450]
+  bg-[#7E856B]
+  hover:bg-[#6F745C]
   transition-all
   duration-300
   text-white
@@ -302,8 +302,8 @@ export default function Home() {
   py-3
   rounded-full
   text-lg
-  shadow-md
-  hover:shadow-xl
+  shadow-sm
+  hover:shadow-lg
   "
 >
                 Bel direct
@@ -330,7 +330,7 @@ export default function Home() {
               "
             >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
+              <div className="w-20 h-20 mx-auto rounded-full bg-white/15 flex items-center justify-center text-3xl mb-6">
                 <FaWhatsapp />
               </div>
 
@@ -345,8 +345,8 @@ export default function Home() {
               <span
   className="
   inline-block
-  bg-[#6F745C]
-  hover:bg-[#5f6450]
+  bg-[#7E856B]
+  hover:bg-[#6F745C]
   transition-all
   duration-300
   text-white
@@ -354,8 +354,8 @@ export default function Home() {
   py-3
   rounded-full
   text-lg
-  shadow-md
-  hover:shadow-xl
+  shadow-sm
+  hover:shadow-lg
   "
               >
                 WhatsApp
@@ -381,7 +381,7 @@ export default function Home() {
               "
             >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
+              <div className="w-20 h-20 mx-auto rounded-full bg-white/15 flex items-center justify-center text-3xl mb-6">
                 <FaEnvelope />
               </div>
 
@@ -396,8 +396,8 @@ export default function Home() {
               <span
   className="
   inline-block
-  bg-[#6F745C]
-  hover:bg-[#5f6450]
+  bg-[#7E856B]
+  hover:bg-[#6F745C]
   transition-all
   duration-300
   text-white
@@ -405,8 +405,8 @@ export default function Home() {
   py-3
   rounded-full
   text-lg
-  shadow-md
-  hover:shadow-xl
+  shadow-sm
+  hover:shadow-lg
   "
               >
                 Mail ons
