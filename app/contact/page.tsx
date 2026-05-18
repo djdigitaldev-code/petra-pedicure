@@ -17,7 +17,12 @@ export default function Home() {
   return (
     <main
       id="top"
-      className="bg-[#F7F4F1] text-[#6F745C] overflow-x-hidden"
+      className={`
+bg-[#F7F4F1]
+text-[#6F745C]
+overflow-x-hidden
+${menuOpen ? "h-screen overflow-hidden" : ""}
+`}
     >
 
       {/* NAVBAR */}
@@ -98,24 +103,27 @@ export default function Home() {
     />
 
     {/* MENU */}
-    <div
-      className="
-      md:hidden
-      fixed
-      top-[95px]
-      left-1/2
-      -translate-x-1/2
-      w-[92%]
-      bg-[#FCFAF8]/95
-      backdrop-blur-xl
-      border border-[#ECE6DF]
-      rounded-[2.7rem]
-      shadow-[0_25px_70px_rgba(0,0,0,0.08)]
-      z-[10000]
-      px-8
-      py-8
-      "
-    >
+<div
+  className="
+  md:hidden
+  fixed
+  top-[95px]
+  left-1/2
+  -translate-x-1/2
+  w-[92%]
+  max-h-[80vh]
+  overflow-y-auto
+  overscroll-contain
+  bg-[#FCFAF8]/95
+  backdrop-blur-xl
+  border border-[#ECE6DF]
+  rounded-[2.7rem]
+  shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+  z-[10000]
+  px-8
+  py-8
+  "
+>
 
 {/* NAV LINKS */}
 <div className="flex flex-col">
