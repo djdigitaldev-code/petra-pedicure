@@ -240,7 +240,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 max-w-xl">
 
               <a
-                href="/contact"
+                href="/tarieven"
                 className="flex-1 flex items-center justify-center text-center bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white px-4 py-4 rounded-full text-lg min-h-[68px] shadow-lg"
               >
                 Maak een afspraak

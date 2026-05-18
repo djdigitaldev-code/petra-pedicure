@@ -250,13 +250,11 @@ bg-white
 rounded-[2.5rem]
 border
 border-[#EEE8E1]
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 p-10
 flex
 flex-col
@@ -320,13 +318,11 @@ bg-white
 rounded-[2.5rem]
 border
 border-[#EEE8E1]
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 p-10
 flex
 flex-col
@@ -390,13 +386,11 @@ bg-white
 rounded-[2.5rem]
 border
 border-[#EEE8E1]
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 p-10
 flex
 flex-col
@@ -457,13 +451,11 @@ bg-white
 rounded-[2.5rem]
 border
 border-[#EEE8E1]
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 p-10
 flex
 flex-col
@@ -529,12 +521,11 @@ border-[#EEE8E1]
 rounded-[2.5rem]
 p-8
 lg:p-14
-shadow-md
-hover:shadow-2xl
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 ">
 
   <div className="text-center mb-14">
@@ -591,13 +582,11 @@ rounded-[2.5rem]
 border
 border-[#EEE8E1]
 p-10
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 ">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
@@ -621,13 +610,11 @@ rounded-[2.5rem]
 border
 border-[#EEE8E1]
 p-10
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 ">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
@@ -648,13 +635,11 @@ rounded-[2.5rem]
 border
 border-[#EEE8E1]
 p-10
-shadow-md
-hover:shadow-2xl
-hover:-translate-y-1
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 ">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
@@ -683,12 +668,11 @@ border-[#EEE8E1]
 rounded-[3rem]
 p-10
 lg:p-16
-shadow-md
-hover:shadow-2xl
-hover:border-[#D9B0A7]
-hover:bg-[#FFFCFA]
+shadow-sm
+hover:shadow-lg
+hover:border-[#EFE7DF]
 transition-all
-duration-300
+duration-500
 ">
 
   <div className="max-w-4xl mx-auto text-center">
