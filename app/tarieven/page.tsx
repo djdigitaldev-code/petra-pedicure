@@ -112,34 +112,33 @@ export default function TarievenPage() {
           >
 
             {/* NAV LINKS */}
-            <div className="flex flex-col">
+<div className="flex flex-col">
 
-              {[
-                ["Behandelingen", "/behandelingen"],
-                ["Tarieven", "/tarieven"],
-                ["Over", "/over"],
-                ["Contact", "/contact"],
-              ].map(([title, link], index) => (
+  {[
+    ["Behandelingen", "/behandelingen"],
+    ["Tarieven", "/tarieven"],
+    ["Over", "/over"],
+    ["Contact", "/contact"],
+  ].map((item, index) => (
+    <a
+      key={index}
+      href={item[1]}
+      onClick={() => setMenuOpen(false)}
+      className="
+      py-7
+      border-b
+      border-[#EEE8E1]
+      uppercase
+      tracking-[0.22em]
+      text-[15px]
+      text-[#7F7F72]
+      "
+    >
+      {item[0]}
+    </a>
+  ))}
 
-                <a
-                  key={index}
-                  href={link as string}
-                  onClick={() => setMenuOpen(false)}
-                  className="
-                  py-7
-                  border-b
-                  border-[#EEE8E1]
-                  uppercase
-                  tracking-[0.22em]
-                  text-[15px]
-                  text-[#7F7F72]
-                  "
-                >
-                  {title}
-                </a>
-              ))}
-
-            </div>
+</div>
 
             {/* CONTACT INFO */}
             <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
@@ -193,6 +192,7 @@ export default function TarievenPage() {
               <a
                 href="https://wa.me/31612345678"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="
                 border
                 border-[#B8B89E]
@@ -237,69 +237,173 @@ export default function TarievenPage() {
 
           </div>
 
-          {/* HOOFDBEHANDELINGEN */}
-          <div className="grid lg:grid-cols-2 gap-8">
+{/* HOOFDBEHANDELINGEN */}
+<div className="grid lg:grid-cols-2 gap-8">
 
-            {/* BASIS */}
-            <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+  {/* BASIS */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
 
-              <div>
+    <div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
 
-                  <div>
+        <div>
 
-                    <h3 className="text-4xl font-light text-[#6F745C] mb-3">
-                      Pedicure Basis
-                    </h3>
+          <h3 className="text-4xl font-light text-[#6F745C] mb-3">
+            Pedicure Basis
+          </h3>
 
-                    <p className="text-[#7F7F72]">
-                      30 – 45 minuten
-                    </p>
-
-                  </div>
-
-                  <div className="text-right">
-
-                    <p className="text-4xl text-[#C1978D] font-light">
-                      €50
-                    </p>
-
-                    <p className="text-sm text-[#7F7F72]">
-                      per persoon
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div className="space-y-4 text-[#7F7F72] mb-10">
-
-                  <div>• Desinfecteren van de voeten</div>
-                  <div>• Knippen en verzorgen van de teennagels</div>
-                  <div>• Reinigen van de nagelomgeving</div>
-                  <div>• Verwijderen van eelt en likdoorns</div>
-                  <div>• Behandelen van kloven en drukplekken</div>
-                  <div>• Verzorgende crème</div>
-
-                </div>
-
-              </div>
-
-              <button
-                onClick={() => setSelectedTreatment("Pedicure Basis")}
-                className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
-              >
-                Maak afspraak
-              </button>
-
-            </div>
-
-          </div>
+          <p className="text-[#7F7F72]">
+            30 – 45 minuten
+          </p>
 
         </div>
 
-      </section>
+        <div className="text-right">
+
+          <p className="text-4xl text-[#C1978D] font-light">
+            €50
+          </p>
+
+          <p className="text-sm text-[#7F7F72]">
+            per persoon
+          </p>
+
+        </div>
+
+      </div>
+
+      <div className="space-y-4 text-[#7F7F72] mb-10">
+
+        <div>• Desinfecteren van de voeten</div>
+        <div>• Knippen en verzorgen van de teennagels</div>
+        <div>• Reinigen van de nagelomgeving</div>
+        <div>• Verwijderen van eelt en likdoorns</div>
+        <div>• Behandelen van kloven en drukplekken</div>
+        <div>• Verzorgende crème</div>
+
+      </div>
+
+    </div>
+
+    <button
+      onClick={() => setSelectedTreatment("Pedicure Basis")}
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+    >
+      Maak afspraak
+    </button>
+
+  </div>
+
+  {/* DELUXE */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 relative overflow-hidden flex flex-col justify-between">
+
+    <div>
+
+      <div className="absolute top-0 right-0 bg-[#D9B0A7] text-white px-6 py-2 rounded-bl-[1.5rem] text-sm uppercase tracking-[0.15em]">
+        Populair
+      </div>
+
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
+
+        <div>
+
+          <h3 className="text-4xl font-light text-[#6F745C] mb-3">
+            Pedicure Deluxe
+          </h3>
+
+          <p className="text-[#7F7F72]">
+            50 – 65 minuten
+          </p>
+
+        </div>
+
+        <div className="text-right">
+
+          <p className="text-4xl text-[#C1978D] font-light">
+            €70
+          </p>
+
+          <p className="text-sm text-[#7F7F72]">
+            per persoon
+          </p>
+
+        </div>
+
+      </div>
+
+      <div className="space-y-4 text-[#7F7F72] mb-10">
+
+        <div>• Complete pedicurebehandeling</div>
+        <div>• Verwijderen van eelt & drukplekken</div>
+        <div>• Verzorgen van ruwe huid & kloven</div>
+        <div>• Scrubbehandeling</div>
+        <div>• Ontspannende voet- en onderbeenmassage</div>
+        <div>• Intensieve verzorging met voedende crème</div>
+
+      </div>
+
+    </div>
+
+    <button
+      onClick={() => setSelectedTreatment("Pedicure Deluxe")}
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+    >
+      Maak afspraak
+    </button>
+
+  </div>
+
+</div>
+
+{/* EXTRA TARIEVEN */}
+<div className="mt-20 bg-white border border-[#EEE8E1] rounded-[2.5rem] p-8 lg:p-14 shadow-sm">
+
+  <div className="text-center mb-14">
+
+    <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+      Extra behandelingen
+    </p>
+
+    <h2 className="text-4xl lg:text-5xl font-light">
+      Aanvullende opties
+    </h2>
+
+  </div>
+
+  <div className="space-y-6">
+
+    {[
+      ["Spa voetenbad", "€15"],
+      ["Voetmassage", "€20"],
+      ["Onderbeenmassage", "€25"],
+      ["Nagels lakken", "€15"],
+      ["French pedicure", "€20"],
+    ].map(([title, price], index) => (
+
+      <div
+        key={index}
+        className="flex items-center justify-between border-b border-[#EEE8E1] pb-5"
+      >
+
+        <span className="text-lg text-[#7F7F72]">
+          {title}
+        </span>
+
+        <span className="text-2xl text-[#C1978D] font-light">
+          {price}
+        </span>
+        </div>
+
+    ))}
+
+  </div>
+
+</div>
+
+</div>
+
+</section>
 
 {/* FOOTER */}
 <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
