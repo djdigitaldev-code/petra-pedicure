@@ -58,7 +58,10 @@ export default function Home() {
 </button>
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
+          <div
+  className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]"
+  style={{ fontFamily: "var(--font-heading)" }}
+>
 
             <a href="/" className="hover:text-[#C1978D] transition">
               Home
