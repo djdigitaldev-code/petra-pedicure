@@ -110,26 +110,23 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
     {/* MENU */}
     <div
-      className="
-      md:hidden
-      fixed
-      top-[74px]
-      left-1/2
-      -translate-x-1/2
-      w-[92%]
-      max-h-[calc(100dvh-110px)]
-      overflow-y-auto
-      bg-[#FCFAF8]/95
-      backdrop-blur-xl
-      border
-      border-[#ECE6DF]
-      rounded-[2.5rem]
-      shadow-[0_25px_70px_rgba(0,0,0,0.08)]
-      z-[10000]
-      px-8
-      py-5
-      pb-8
-      "
+className="
+md:hidden
+fixed
+top-[86px]
+left-1/2
+-translate-x-1/2
+w-[94%]
+bg-[#FCFAF8]/95
+backdrop-blur-xl
+border
+border-[#ECE6DF]
+rounded-[2.7rem]
+shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+z-[10000]
+px-8
+py-6
+"
     >
 
       {/* NAV LINKS */}
@@ -179,73 +176,64 @@ text-[#C1978D]
 Maak hier een afspraak
 </p>
 
-      {/* BUTTONS */}
-      <div className="mt-5 flex flex-col gap-2">
+{/* BUTTONS */}
+<div className="mt-6 flex flex-col gap-3">
 
-        <a
-          href="tel:+31612345678"
-className="
-bg-white
-border
-border-[#DCCFC4]
-text-[#6F745C]
-text-center
-py-4
-rounded-full
-text-[18px]
-shadow-sm
-font-medium
-hover:shadow-md
-hover:bg-[#F7F4F1]
-transition
-"
-        >
-          Bel direct
-        </a>
+  <a
+    href="tel:+31612345678"
+    className="
+    bg-[#D9B0A7]
+    hover:bg-[#c89b91]
+    text-white
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    shadow-sm
+    transition
+    "
+  >
+    Bel direct
+  </a>
 
-        <a
-          href="https://wa.me/31612345678"
-          target="_blank"
-          rel="noopener noreferrer"
-className="
-bg-white
-border
-border-[#DCCFC4]
-text-[#6F745C]
-text-center
-py-4
-rounded-full
-text-[18px]
-shadow-sm
-hover:shadow-md
-hover:bg-[#F7F4F1]
-transition
-"
-        >
-          WhatsApp
-        </a>
+  <a
+    href="https://wa.me/31612345678"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+    bg-white
+    border
+    border-[#DCCFC4]
+    text-[#6F745C]
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    hover:bg-[#F7F4F1]
+    transition
+    "
+  >
+    WhatsApp
+  </a>
 
-        <a
-          href="mailto:petrapedicureaanhuis@hotmail.com"
-className="
-bg-white
-border
-border-[#DCCFC4]
-text-[#6F745C]
-text-center
-py-4
-rounded-full
-text-[18px]
-shadow-sm
-hover:shadow-md
-hover:bg-[#F7F4F1]
-transition
-"
-        >
-          Mail
-        </a>
+  <a
+    href="mailto:petrapedicureaanhuis@hotmail.com"
+    className="
+    bg-[#D9B0A7]
+    hover:bg-[#c89b91]
+    text-white
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    shadow-sm
+    transition
+    "
+  >
+    Mail ons
+  </a>
 
-      </div>
+</div>
 
     </div>
 
