@@ -366,6 +366,39 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         met een professionele pedicurebehandeling.
       </p>
 
+      {/* FOTO PETRA */}
+<div className="max-w-6xl mx-auto mt-20 mb-8">
+
+  <div
+    className="
+    overflow-hidden
+    rounded-[2.8rem]
+    border
+    border-[#EEE8E1]
+    shadow-[0_18px_60px_rgba(0,0,0,0.05)]
+    bg-white
+    "
+  >
+
+    <img
+      src="/petra-behandeling.jpg"
+      alt="Petra Pedicure tijdens een behandeling"
+className="
+w-full
+h-[380px]
+lg:h-[520px]
+object-cover
+object-center
+transition
+duration-700
+hover:scale-[1.015]
+"
+    />
+
+  </div>
+
+</div>
+
     </div>
 
     </div>
@@ -396,7 +429,19 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         {/* HIGHLIGHTS */}
         <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
+          <div className="
+bg-[#FCFAF8]
+rounded-[2rem]
+p-8
+border
+border-[#EEE8E1]
+shadow-sm
+transition-all
+duration-300
+hover:-translate-y-2
+hover:shadow-xl
+hover:border-[#D9B0A7]
+">
 
             <div className="text-4xl mb-5">💧</div>
 
@@ -411,7 +456,19 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
           </div>
 
-          <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
+          <div className="
+bg-[#FCFAF8]
+rounded-[2rem]
+p-8
+border
+border-[#EEE8E1]
+shadow-sm
+transition-all
+duration-300
+hover:-translate-y-2
+hover:shadow-xl
+hover:border-[#D9B0A7]
+">
 
             <div className="text-4xl mb-5">✨</div>
 
@@ -426,7 +483,19 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
           </div>
 
-          <div className="bg-[#FCFAF8] rounded-[2rem] p-8 border border-[#EEE8E1]">
+          <div className="
+bg-[#FCFAF8]
+rounded-[2rem]
+p-8
+border
+border-[#EEE8E1]
+shadow-sm
+transition-all
+duration-300
+hover:-translate-y-2
+hover:shadow-xl
+hover:border-[#D9B0A7]
+">
 
             <div className="text-4xl mb-5">🤍</div>
 
@@ -499,7 +568,23 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
               <div
                 key={index}
-                className="bg-white rounded-2xl border border-[#EEE8E1] px-6 py-5 flex items-center gap-4"
+                className="
+bg-white
+rounded-2xl
+border
+border-[#EEE8E1]
+px-6
+py-5
+flex
+items-center
+gap-4
+shadow-sm
+transition-all
+duration-300
+hover:-translate-y-2
+hover:shadow-xl
+hover:border-[#D9B0A7]
+"
               >
 
                 <div className="w-3 h-3 rounded-full bg-[#D9B0A7]" />
