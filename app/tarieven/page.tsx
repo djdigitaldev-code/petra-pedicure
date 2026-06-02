@@ -156,21 +156,6 @@ py-6
   ))}
 </div>
 
-{/* CONTACT INFO */}
-<div className="mt-8 flex flex-col items-center gap-5 text-[#AEB49A]">
-
-  <div className="flex items-center gap-4 text-[18px]">
-    <FaPhoneAlt size={20} color="#C1978D" />
-    <span>06 12 34 56 78</span>
-  </div>
-
-  <div className="flex items-center gap-4 text-[18px]">
-    <FaEnvelope size={20} color="#C1978D" />
-    <span>petrapedicureaanhuis@hotmail.com</span>
-  </div>
-
-</div>
-
       {/* SUBTITLE */}
       <p
         className="
@@ -185,46 +170,62 @@ py-6
         Maak hier een afspraak
       </p>
 
-      {/* BUTTONS */}
-      <div className="mt-8 flex flex-col gap-4">
+{/* BUTTONS */}
+<div className="mt-6 flex flex-col gap-3">
 
-        <a
-          href="tel:+31612345678"
-          className="
-          bg-[#D9B0A7]
-          hover:bg-[#c89b91]
-          transition
-          text-white
-          text-center
-          py-4
-          rounded-full
-          text-xl
-          shadow-sm
-          "
-        >
-          Bel direct
-        </a>
+  <a
+    href="tel:+31612345678"
+    className="
+    bg-[#D9B0A7]
+    hover:bg-[#c89b91]
+    transition
+    text-white
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    "
+  >
+    Bel direct
+  </a>
 
-        <a
-          href="https://wa.me/31612345678"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-          border
-          border-[#B8B89E]
-          text-[#7F7F72]
-          text-center
-          py-4
-          rounded-full
-          text-xl
-          hover:bg-[#F7F4F1]
-          transition
-          "
-        >
-          WhatsApp
-        </a>
+  <a
+    href="https://wa.me/31612345678"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+    border
+    border-[#B8B89E]
+    text-[#7F7F72]
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    hover:bg-[#F7F4F1]
+    transition
+    "
+  >
+    WhatsApp
+  </a>
 
-      </div>
+  <a
+    href="mailto:petrapedicureaanhuis@hotmail.com"
+    className="
+    border
+    border-[#B8B89E]
+    text-[#7F7F72]
+    text-center
+    py-4
+    rounded-full
+    text-lg
+    hover:bg-[#F7F4F1]
+    transition
+    "
+  >
+    Mail
+  </a>
+
+</div>
 
     </div>
   </>
