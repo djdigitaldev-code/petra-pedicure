@@ -251,14 +251,13 @@ Voor & na
 
 <h1
 className="
-text-[1.95rem]
-sm:text-[3.8rem]
-lg:text-[5rem]
+text-[2.45rem]
+sm:text-6xl
+lg:text-7xl
 font-light
-mb-8
+mb-10
 leading-[1.15]
-break-words
-px-3
+px-2
 "
 >
   Behandelresultaten
