@@ -228,135 +228,257 @@ py-6
   </>
 )}
 
-      {/* CONTENT */}
-      <section className="px-6 lg:px-20 py-24 pt-[160px]">
+{/* CONTENT */}
+<section className="pt-[160px] pb-24 px-6 lg:px-20">
 
-        <div className="max-w-4xl mx-auto">
+<div className="max-w-6xl mx-auto">
 
-          {/* TITEL */}
-          <div className="text-center mb-14">
+<div className="text-center mb-20">
 
-            <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
-              Petra Pedicure
-            </p>
+<p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-5">
+Voor & na
+</p>
 
-            <h1 className="text-[2.7rem] sm:text-5xl lg:text-6xl font-light text-[#6F745C]">
-              Annuleringsbeleid
-            </h1>
+<h1 className="text-5xl lg:text-7xl font-light mb-10">
+Behandelresultaten
+</h1>
 
-          </div>
+<p className="text-lg text-[#7F7F72] leading-9 max-w-3xl mx-auto">
+Iedere voet is anders en iedere behandeling wordt afgestemd op
+wat jouw voeten nodig hebben. Hieronder zie je voorbeelden van
+resultaten na professionele voetverzorging.
+</p>
 
-          {/* CONTENT */}
-          <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-8 lg:p-14 shadow-sm space-y-12">
+</div>
 
-            <p className="leading-9 text-[#7F7F72] text-lg">
-              Ik streef ernaar om mijn diensten zo goed mogelijk te plannen
-              en beschikbaar te houden voor alle klanten.
-              Daarom hanteer ik het volgende annuleringsbeleid.
-            </p>
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                1. Annuleren van afspraken
-              </h2>
+{/* RESULTAAT 1 */}
+<div className="mb-20">
 
-              <p className="leading-9 text-[#7F7F72]">
-                Afspraken kunnen kosteloos worden geannuleerd of verplaatst
-                tot 24 uur vóór de geplande afspraak.
-              </p>
-            </div>
+<div className="bg-white rounded-[2.5rem] p-8 shadow-sm border border-[#EEE8E1]">
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                2. Te late annulering
-              </h2>
+<img
+src="/resultaten/resultaat-1.jpg"
+alt="Voor en na voetverzorging"
+className="
+w-full
+rounded-[2rem]
+transition
+duration-700
+hover:scale-[1.02]
+"
+/>
 
-              <p className="leading-9 text-[#7F7F72]">
-                Bij annuleringen binnen 24 uur vóór de afspraak behoud ik mij
-                het recht voor om 100% van de kosten in rekening te brengen.
-              </p>
-            </div>
+<div className="text-center mt-8">
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                3. No-show (niet verschijnen)
-              </h2>
+<h2 className="text-3xl font-light mb-4">
+Verzorging & egaliseren
+</h2>
 
-              <p className="leading-9 text-[#7F7F72]">
-                Indien u zonder bericht niet verschijnt op de afspraak,
-                wordt 100% van de kosten in rekening gebracht.
-              </p>
-            </div>
+<p className="text-[#7F7F72] leading-8">
+Nagels verzorgd, huid verfijnd en voeten weer fris en verzorgd.
+</p>
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                4. Te laat komen
-              </h2>
+</div>
 
-              <p className="leading-9 text-[#7F7F72]">
-                Wanneer u te laat arriveert, kan de behandeltijd worden
-                ingekort zonder prijsvermindering.
-                In sommige gevallen kan de afspraak worden geannuleerd
-                en als no-show worden beschouwd.
-              </p>
-            </div>
+</div>
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                5. Overmacht
-              </h2>
+</div>
 
-              <p className="leading-9 text-[#7F7F72]">
-                In geval van overmacht zoals ziekte of onvoorziene omstandigheden
-                kijken wij samen naar een passende oplossing.
-                Neem hiervoor zo snel mogelijk contact met mij op.
-              </p>
-            </div>
 
-            {/* ITEM */}
-            <div>
-              <h2 className="text-2xl lg:text-3xl mb-4 text-[#6F745C]">
-                6. Annuleren door mij
-              </h2>
+{/* DETAIL GRID */}
+<div className="grid lg:grid-cols-2 gap-10">
 
-              <p className="leading-9 text-[#7F7F72]">
-                Ik behoud mij het recht voor om afspraken te verplaatsen
-                of te annuleren in geval van onvoorziene omstandigheden.
-                Uiteraard wordt er in overleg een nieuwe afspraak ingepland.
-              </p>
-            </div>
+{[
+[
+"/resultaten/resultaat-2.jpg",
+"Verzorging van hielen"
+],
 
-            {/* CONTACT */}
-            <div className="pt-8 border-t border-[#EEE8E1]">
+[
+"/resultaten/resultaat-3.jpg",
+"Verzachten van kloven"
+],
 
-              <h2 className="text-2xl lg:text-3xl mb-6 text-[#6F745C]">
-                7. Contact voor annuleringen
-              </h2>
+[
+"/resultaten/resultaat-4.jpg",
+"Verwijderen van eelt"
+],
 
-              <div className="space-y-4 text-[#7F7F72] text-lg">
+[
+"/resultaten/resultaat-5.jpg",
+"Comfort & verzorging"
+],
 
-                <p>
-                  WhatsApp: 06 12 34 56 78
-                </p>
+].map(([image,title],index)=>(
 
-                <p>
-                  Telefoon: 06 12 34 56 78
-                </p>
+<div
+key={index}
+className="
+bg-white
+rounded-[2.5rem]
+overflow-hidden
+border
+border-[#EEE8E1]
+shadow-sm
+transition
+duration-500
+hover:-translate-y-2
+hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)]
+"
+>
 
-              </div>
+<img
+src={image}
+className="w-full"
+/>
 
-            </div>
+<div className="p-8">
 
-          </div>
+<h3 className="text-3xl font-light mb-4">
+{title}
+</h3>
 
-        </div>
+<p className="text-[#7F7F72] leading-8">
+Professionele behandeling met aandacht voor comfort,
+verzorging en uitstraling.
+</p>
 
-      </section>
+</div>
+
+</div>
+
+))}
+
+</div>
+
+
+{/* ONDERSTE FOTO */}
+<div className="mt-20">
+
+<img
+src="/resultaten/resultaat-6.jpg"
+alt="Behandeling"
+className="
+w-full
+rounded-[2.5rem]
+shadow-sm
+transition
+duration-700
+hover:scale-[1.01]
+"
+/>
+
+</div>
+
+
+<div className="mt-20 text-center">
+
+<p className="text-2xl text-[#C1978D] font-light leading-relaxed">
+
+Iedere behandeling is gericht op comfort,
+verzorging en gezonde voeten.
+
+</p>
+
+<p className="mt-6 text-[#7F7F72] text-lg">
+Resultaten verschillen per persoon.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+      {/* FOOTER */}
+<footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
+
+  <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+
+<span
+  className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+>
+  Petra Pedicure
+</span>
+
+    <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
+      Professionele pedicure aan huis in Almere en omstreken
+    </p>
+
+    {/* SOCIALS */}
+    <div className="mt-8 flex items-center justify-center gap-8 text-3xl text-[#AEB49A]">
+
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaFacebookF />
+      </a>
+
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaInstagram />
+      </a>
+
+      <a
+        href="#"
+        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+      >
+        <FaLinkedinIn />
+      </a>
+
+    </div>
+
+    {/* LINKS */}
+    <div className="mt-6 flex justify-center">
+
+      <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
+
+        <a
+          href="/annuleringsbeleid"
+          className="hover:text-[#C1978D] transition"
+        >
+          Annuleringsbeleid
+        </a>
+
+        <span className="text-[#CFC7BF]">•</span>
+
+        <a
+          href="/voorwaarden"
+          className="hover:text-[#C1978D] transition"
+        >
+          Algemene voorwaarden
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* SEO TEKST */}
+  <div className="mt-12 pt-8 border-t border-[#E5DDD5] text-center max-w-3xl mx-auto">
+
+    <p className="text-sm leading-7 text-[#8A8A80]">
+      Petra Pedicure biedt professionele pedicure aan huis in Almere en omgeving.
+      Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns behandelen,
+      kalknagels verzorgen, spa voetbehandelingen en ontspannende voetmassages.
+    </p>
+
+  </div>
+
+  {/* COPYRIGHT */}
+  <div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center text-sm text-[#9A9A90]">
+
+    © 2026 Petra Pedicure • Alle rechten voorbehouden
+
+  </div>
+
+</footer>
 
     </main>
   );

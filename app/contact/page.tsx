@@ -14,7 +14,7 @@ import {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
+ return (
     <main
       id="top"
       className={`
@@ -68,9 +68,9 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
-            <a href="/" className="hover:text-[#C1978D] transition">
-              Home
-            </a>
+<a href="/" className="hover:text-[#C1978D] transition">
+  Home
+</a>
 
             <a href="/behandelingen" className="hover:text-[#C1978D] transition">
               Behandelingen
@@ -78,6 +78,10 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
             <a href="/tarieven" className="hover:text-[#C1978D] transition">
               Tarieven
+            </a>
+
+            <a href="/behandelresultaten" className="hover:text-[#C1978D] transition">
+              Behandelresultaten
             </a>
 
             <a href="/over" className="hover:text-[#C1978D] transition">
@@ -104,25 +108,23 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
     {/* MENU */}
 <div
-  className="
-  md:hidden
-  fixed
-  top-[95px]
-  left-1/2
-  -translate-x-1/2
-  w-[92%]
-  max-h-[80vh]
-  overflow-y-auto
-  overscroll-contain
-  bg-[#FCFAF8]/95
-  backdrop-blur-xl
-  border border-[#ECE6DF]
-  rounded-[2.7rem]
-  shadow-[0_25px_70px_rgba(0,0,0,0.08)]
-  z-[10000]
-  px-8
-  py-8
-  "
+className="
+md:hidden
+fixed
+top-[88px]
+left-1/2
+-transform-x-1/2
+w-[90%]
+bg-[#FCFAF8]/95
+backdrop-blur-xl
+border
+border-[#ECE6DF]
+rounded-[2.5rem]
+shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+z-[10000]
+px-8
+py-6
+"
 >
 
 {/* NAV LINKS */}
@@ -130,6 +132,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   {[
     ["Behandelingen", "/behandelingen"],
     ["Tarieven", "/tarieven"],
+    ["Behandelresultaten", "/behandelresultaten"],
     ["Over", "/over"],
     ["Contact", "/contact"],
   ].map(([title, link], index) => (
@@ -138,7 +141,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       href={link}
       onClick={() => setMenuOpen(false)}
       className="
-      py-7
+      py-5
       border-b
       border-[#EEE8E1]
       uppercase
@@ -153,7 +156,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 </div>
 
 {/* CONTACT INFO */}
-<div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
+<div className="mt-8 flex flex-col items-center gap-5 text-[#AEB49A]">
 
   <div className="flex items-center gap-4 text-[18px]">
     <FaPhoneAlt size={20} color="#C1978D" />
@@ -182,7 +185,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       </p>
 
       {/* BUTTONS */}
-      <div className="mt-8 flex flex-col gap-5">
+      <div className="mt-8 flex flex-col gap-4">
 
         <a
           href="tel:+31612345678"
@@ -192,7 +195,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
           transition
           text-white
           text-center
-          py-5
+          py-4
           rounded-full
           text-xl
           shadow-sm
@@ -204,12 +207,13 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         <a
           href="https://wa.me/31612345678"
           target="_blank"
+          rel="noopener noreferrer"
           className="
           border
           border-[#B8B89E]
           text-[#7F7F72]
           text-center
-          py-5
+          py-4
           rounded-full
           text-xl
           hover:bg-[#F7F4F1]
