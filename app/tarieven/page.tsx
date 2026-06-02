@@ -162,7 +162,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
   <div className="flex items-center gap-4 text-[18px]">
     <FaEnvelope size={20} color="#C1978D" />
-    <span>info@petrapedicure.nl</span>
+    <span>petrapedicureaanhuis@hotmail.com</span>
   </div>
 
 </div>

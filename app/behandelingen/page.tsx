@@ -164,7 +164,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
   <div className="flex items-center gap-4 text-[18px]">
     <FaEnvelope size={20} color="#C1978D" />
-    <span>info@petrapedicure.nl</span>
+    <span>petrapedicureaanhuis@hotmail.com</span>
   </div>
 
 </div>
@@ -307,6 +307,8 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         Gun jezelf een moment van ontspanning en verzorging
         met een professionele pedicurebehandeling.
       </p>
+
+    </div>
 
     </div>
 
@@ -505,11 +507,38 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
             laat ontspannen.
           </p>
 
-        </div>
 
-      </div>
+{/* WELLNESS FOTO */}
+<div className="mt-14 overflow-hidden rounded-[2.5rem] border border-[#EEE8E1] shadow-sm">
 
-      {/* SLOT */}
+  <img
+    src="/images/wellness-spa.png"
+    alt="Wellness voetenbehandeling met BCL Spa"
+    className="w-full object-cover"
+  />
+
+  <div className="bg-white px-8 py-10 text-center">
+
+    <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
+      Wellness behandeling
+    </p>
+
+    <h3 className="text-4xl font-light mb-5 text-[#6F745C]">
+      Ontspanning voor voeten & onderbenen
+    </h3>
+
+    <p className="text-[#7F7F72] leading-8 max-w-2xl mx-auto">
+      Een luxe wellnessmoment met verzorgende BCL Spa producten
+      en een ontspannende voeten- en onderbeenmassage.
+    </p>
+
+  </div>
+
+</div>
+
+</div>
+          
+          {/* SLOT */}
       <div className="mt-16 pt-10 border-t border-[#EEE8E1] text-center">
 
         <p className="text-3xl text-[#C1978D] font-light mb-6">
