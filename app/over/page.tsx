@@ -230,15 +230,33 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
           {/* IMAGE */}
-          <div className="relative">
+<div className="relative">
 
-            <img
-              src="/petra-over.jpg"
-              alt="Petra Pedicure aan huis"
-              className="rounded-[2.5rem] shadow-2xl object-cover h-[720px] w-full"
-            />
+  <div
+    className="
+    rounded-[2.5rem]
+    overflow-hidden
+    shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+    bg-[#FCFAF8]
+    "
+  >
 
-          </div>
+    <img
+      src="/petra-over.jpg"
+      alt="Petra Pedicure aan huis"
+      className="
+      w-full
+      h-auto
+      object-contain
+      transition
+      duration-700
+      hover:scale-[1.02]
+      "
+    />
+
+  </div>
+
+</div>
 
           {/* CONTENT */}
           <div>
