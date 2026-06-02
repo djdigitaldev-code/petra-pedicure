@@ -100,6 +100,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 {/* MOBILE MENU */}
 {menuOpen && (
   <>
+
     {/* OVERLAY */}
     <div
       onClick={() => setMenuOpen(false)}
@@ -107,126 +108,134 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
     />
 
     {/* MENU */}
-<div
-className="
-md:hidden
-fixed
-top-[88px]
-left-1/2
--translate-x-1/2
-w-[90%]
-bg-[#FCFAF8]/95
-backdrop-blur-xl
-border
-border-[#ECE6DF]
-rounded-[2.5rem]
-shadow-[0_25px_70px_rgba(0,0,0,0.08)]
-z-[10000]
-px-8
-py-6
-"
->
-
-{/* NAV LINKS */}
-<div className="flex flex-col">
-  {[
-    ["Behandelingen", "/behandelingen"],
-    ["Tarieven", "/tarieven"],
-    ["Behandelresultaten", "/behandelresultaten"],
-    ["Over", "/over"],
-    ["Contact", "/contact"],
-  ].map(([title, link], index) => (
-    <a
-      key={index}
-      href={link}
-      onClick={() => setMenuOpen(false)}
+    <div
       className="
+      md:hidden
+      fixed
+      top-[72px]
+      left-1/2
+      -translate-x-1/2
+      w-[90%]
+      max-h-[calc(100dvh-110px)]
+      overflow-y-auto
+      bg-[#FCFAF8]/95
+      backdrop-blur-xl
+      border
+      border-[#ECE6DF]
+      rounded-[2.5rem]
+      shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+      z-[10000]
+      px-8
       py-5
-      border-b
-      border-[#EEE8E1]
-      uppercase
-      tracking-[0.22em]
-      text-[15px]
-      text-[#7F7F72]
+      pb-8
       "
     >
-      {title}
-    </a>
-  ))}
-</div>
+
+      {/* NAV LINKS */}
+      <div className="flex flex-col">
+
+        {[
+          ["Behandelingen", "/behandelingen"],
+          ["Tarieven", "/tarieven"],
+          ["Behandelresultaten", "/behandelresultaten"],
+          ["Over", "/over"],
+          ["Contact", "/contact"],
+        ].map(([title, link], index) => (
+
+          <a
+            key={index}
+            href={link}
+            onClick={() => setMenuOpen(false)}
+            className="
+            py-3
+            border-b
+            border-[#EEE8E1]
+            uppercase
+            tracking-[0.22em]
+            text-[15px]
+            text-[#7F7F72]
+            "
+          >
+            {title}
+          </a>
+
+        ))}
+
+      </div>
 
       {/* SUBTITLE */}
       <p
         className="
-        mt-12
+        mt-6
         text-center
         uppercase
-        tracking-[0.28em]
-        text-[15px]
+        tracking-[0.22em]
+        text-[13px]
         text-[#C1978D]
         "
       >
         Maak hier een afspraak
       </p>
 
-{/* BUTTONS */}
-<div className="mt-6 flex flex-col gap-3">
+           {/* BUTTONS */}
+      <div className="mt-5 flex flex-col gap-2">
 
-  <a
-    href="tel:+31612345678"
-    className="
-    bg-[#D9B0A7]
-    hover:bg-[#c89b91]
-    transition
-    text-white
-    text-center
-    py-4
-    rounded-full
-    text-lg
-    "
-  >
-    Bel direct
-  </a>
+        <a
+          href="tel:+31612345678"
+className="
+bg-[#D9B0A7]
+hover:bg-[#c89b91]
+transition
+text-white
+text-center
+py-[14px]
+rounded-full
+text-[17px]
+"
+        >
+          Bel direct
+        </a>
 
-  <a
-    href="https://wa.me/31612345678"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-    border
-    border-[#B8B89E]
-    text-[#7F7F72]
-    text-center
-    py-4
-    rounded-full
-    text-lg
-    hover:bg-[#F7F4F1]
-    transition
-    "
-  >
-    WhatsApp
-  </a>
+        <a
+          href="https://wa.me/31612345678"
+          target="_blank"
+          rel="noopener noreferrer"
+className="
+border
+border-[#B8B89E]
+text-[#7F7F72]
+text-center
+py-[14px]
+rounded-full
+text-[17px]
+hover:bg-[#F7F4F1]
+transition
+"
+        >
+          WhatsApp
+        </a>
 
-  <a
-    href="mailto:petrapedicureaanhuis@hotmail.com"
-    className="
-    border
-    border-[#B8B89E]
-    text-[#7F7F72]
-    text-center
-    py-4
-    rounded-full
-    text-lg
-    hover:bg-[#F7F4F1]
-    transition
-    "
-  >
-    Mail
-  </a>
+        <a
+          href="mailto:petrapedicureaanhuis@hotmail.com"
+className="
+border
+border-[#B8B89E]
+text-[#7F7F72]
+text-center
+py-[14px]
+rounded-full
+text-[17px]
+hover:bg-[#F7F4F1]
+transition
+"
+        >
+          Mail
+        </a>
 
-</div>
+      </div>
 
     </div>
+
   </>
 )}
 
