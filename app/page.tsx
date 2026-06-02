@@ -371,31 +371,21 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       </div>
 
 {/* FOTO PETRA */}
-<div
-  className="
-  mt-20
-  mb-14
-  -mx-6
-  lg:mx-0
-  overflow-hidden
-  rounded-[2.8rem]
-  group
-  "
->
+<div className="mt-20 mb-20">
 
   <img
     src="/petra-behandeling.jpg"
-    alt="Petra Pedicure tijdens een behandeling"
+    alt="Petra Pedicure"
+
     className="
     block
     w-full
-    h-[380px]
-    lg:h-[520px]
+    rounded-[3rem]
     object-cover
-    object-center
     transition-all
     duration-700
-    group-hover:scale-[1.015]
+    hover:-translate-y-2
+    hover:shadow-[0_30px_90px_rgba(0,0,0,0.08)]
     "
   />
 
