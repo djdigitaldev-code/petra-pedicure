@@ -307,41 +307,29 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
         Gun jezelf een moment van ontspanning en verzorging
         met een professionele pedicurebehandeling.
       </p>
+      </div>
 
-      {/* FOTO PETRA */}
-<div className="max-w-6xl mx-auto mt-20 mb-8">
+{/* FOTO PETRA */}
+<div className="mt-20 mb-10">
 
-<div
-  className="
-  overflow-hidden
-  rounded-[2.8rem]
-  transition-all
-  duration-700
-  hover:-translate-y-2
-  hover:shadow-[0_35px_90px_rgba(0,0,0,0.10)]
-  "
->
-
-    <img
-      src="/petra-behandeling.jpg"
-      alt="Petra Pedicure tijdens een behandeling"
-className="
-w-full
-h-[380px]
-lg:h-[520px]
-object-cover
-object-center
-transition
-duration-700
-hover:scale-[1.015]
-"
-    />
-
-  </div>
+  <img
+    src="/petra-behandeling.jpg"
+    alt="Petra Pedicure tijdens een behandeling"
+    className="
+    w-full
+    rounded-[2.8rem]
+    h-[380px]
+    lg:h-[520px]
+    object-cover
+    object-center
+    transition
+    duration-700
+    hover:scale-[1.015]
+    hover:-translate-y-1
+    "
+  />
 
 </div>
-
-    </div>
 
     </div>
 
