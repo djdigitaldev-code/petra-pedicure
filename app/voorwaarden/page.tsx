@@ -111,10 +111,10 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       className="
       md:hidden
       fixed
-      top-[72px]
+      top-[74px]
       left-1/2
       -translate-x-1/2
-      w-[90%]
+      w-[92%]
       max-h-[calc(100dvh-110px)]
       overflow-y-auto
       bg-[#FCFAF8]/95
@@ -163,33 +163,39 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       </div>
 
       {/* SUBTITLE */}
-      <p
-        className="
-        mt-6
-        text-center
-        uppercase
-        tracking-[0.22em]
-        text-[13px]
-        text-[#C1978D]
-        "
-      >
-        Maak hier een afspraak
-      </p>
+<p
+className="
+mt-8
+mb-5
+text-center
+uppercase
+tracking-[0.26em]
+text-[16px]
+text-[#C1978D]
+"
+>
+Maak hier een afspraak
+</p>
 
-           {/* BUTTONS */}
+      {/* BUTTONS */}
       <div className="mt-5 flex flex-col gap-2">
 
         <a
           href="tel:+31612345678"
 className="
-bg-[#D9B0A7]
-hover:bg-[#c89b91]
-transition
-text-white
+bg-white
+border
+border-[#DCCFC4]
+text-[#6F745C]
 text-center
-py-[14px]
+py-4
 rounded-full
-text-[17px]
+text-[18px]
+shadow-sm
+font-medium
+hover:shadow-md
+hover:bg-[#F7F4F1]
+transition
 "
         >
           Bel direct
@@ -200,13 +206,16 @@ text-[17px]
           target="_blank"
           rel="noopener noreferrer"
 className="
+bg-white
 border
-border-[#B8B89E]
-text-[#7F7F72]
+border-[#DCCFC4]
+text-[#6F745C]
 text-center
-py-[14px]
+py-4
 rounded-full
-text-[17px]
+text-[18px]
+shadow-sm
+hover:shadow-md
 hover:bg-[#F7F4F1]
 transition
 "
@@ -217,13 +226,16 @@ transition
         <a
           href="mailto:petrapedicureaanhuis@hotmail.com"
 className="
+bg-white
 border
-border-[#B8B89E]
-text-[#7F7F72]
+border-[#DCCFC4]
+text-[#6F745C]
 text-center
-py-[14px]
+py-4
 rounded-full
-text-[17px]
+text-[18px]
+shadow-sm
+hover:shadow-md
 hover:bg-[#F7F4F1]
 transition
 "
