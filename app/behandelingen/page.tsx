@@ -314,21 +314,55 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 {/* FOTO PETRA */}
 <div className="mt-20 mb-20">
 
-  <img
-    src="/petra-behandeling.jpg"
-    alt="Petra Pedicure"
+  <div className="grid md:grid-cols-3 gap-6">
 
-    className="
-    block
-    w-full
-    rounded-[3rem]
-    object-cover
-    transition-all
-    duration-700
-    hover:-translate-y-2
-    hover:shadow-[0_30px_90px_rgba(0,0,0,0.08)]
-    "
-  />
+    <img
+      src="/petra-behandeling1.jpg"
+      alt="Petra tijdens behandeling"
+      className="
+      w-full
+      h-[560px]
+      object-cover
+      rounded-[2.5rem]
+      transition-all
+      duration-500
+      hover:-translate-y-2
+      hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)]
+      "
+    />
+
+    <img
+      src="/petra-behandeling2.jpg"
+      alt="Voetbehandeling"
+      className="
+      w-full
+      h-[560px]
+      object-cover
+      rounded-[2.5rem]
+      transition-all
+      duration-500
+      hover:-translate-y-2
+      hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)]
+      md:translate-y-8
+      "
+    />
+
+    <img
+      src="/petra-behandeling3.jpg"
+      alt="Petra Pedicure"
+      className="
+      w-full
+      h-[560px]
+      object-cover
+      rounded-[2.5rem]
+      transition-all
+      duration-500
+      hover:-translate-y-2
+      hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)]
+      "
+    />
+
+  </div>
 
 </div>
 
