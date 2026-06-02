@@ -233,7 +233,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
           <div className="relative">
 
             <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop"
+              src="/petra-over.jpg"
               alt="Petra Pedicure aan huis"
               className="rounded-[2.5rem] shadow-2xl object-cover h-[720px] w-full"
             />
