@@ -249,8 +249,8 @@ Maak hier een afspraak
 Voor & na
 </p>
 
-<h1 className="text-5xl lg:text-7xl font-light mb-10">
-Behandelresultaten
+<h1 className="text-[2.9rem] sm:text-6xl lg:text-7xl font-light mb-10 leading-tight">
+  Behandelresultaten
 </h1>
 
 <p className="text-lg text-[#7F7F72] leading-9 max-w-3xl mx-auto">
@@ -261,66 +261,57 @@ resultaten na professionele voetverzorging.
 
 </div>
 
+</div>
 
-{/* RESULTAAT 1 */}
+
+{/* RESULTAAT 1 — OPENING */}
 <div className="mb-20">
 
-<div className="bg-white rounded-[2.5rem] p-8 shadow-sm border border-[#EEE8E1]">
-
-<img
-src="/resultaten/resultaat-1.jpg"
-alt="Voor en na voetverzorging"
-className="
-w-full
-rounded-[2rem]
-transition
-duration-700
-hover:scale-[1.02]
-"
-/>
-
-<div className="text-center mt-8">
-
-<h2 className="text-3xl font-light mb-4">
-Verzorging & egaliseren
-</h2>
-
-<p className="text-[#7F7F72] leading-8">
-Nagels verzorgd, huid verfijnd en voeten weer fris en verzorgd.
-</p>
-
-</div>
-
-</div>
+  <img
+    src="/resultaat-1.jpg"
+    alt="Behandeling pedicure"
+    className="
+      w-full
+      rounded-[2.5rem]
+      shadow-sm
+      transition
+      duration-700
+      hover:scale-[1.01]
+    "
+  />
 
 </div>
 
 
-{/* DETAIL GRID */}
+{/* RESULTATEN */}
 <div className="grid lg:grid-cols-2 gap-10">
 
 {[
 [
-"/resultaten/resultaat-2.jpg",
-"Verzorging van hielen"
+"/resultaat-2.jpg",
+"Nagelverzorging & verzorgde uitstraling",
+"Nagels verzorgd en voeten weer fris en verzorgd."
 ],
 
 [
-"/resultaten/resultaat-3.jpg",
-"Verzachten van kloven"
+"/resultaat-3.jpg",
+"Vermindering van eelt en drukpunten",
+"Comfortabeler lopen door het verminderen van eeltvorming."
 ],
 
 [
-"/resultaten/resultaat-4.jpg",
-"Verwijderen van eelt"
+"/resultaat-4.jpg",
+"Herstel van droge en gevoelige hielen",
+"Verzorging gericht op zachtere en gezonder uitziende hielen."
 ],
 
 [
-"/resultaten/resultaat-5.jpg",
-"Comfort & verzorging"
+"/resultaat-5.jpg",
+"Verzorging van eeltvorming",
+"Gerichte behandeling voor meer comfort en een verzorgde uitstraling."
 ],
 
-].map(([image,title],index)=>(
+].map(([image,title,text],index)=>(
 
 <div
 key={index}
@@ -333,25 +324,44 @@ border-[#EEE8E1]
 shadow-sm
 transition
 duration-500
-hover:-translate-y-2
-hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)]
+hover:-translate-y-1
+hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]
 "
 >
 
 <img
 src={image}
-className="w-full"
+alt={title}
+className="
+w-full
+transition
+duration-700
+hover:scale-[1.02]
+"
 />
 
 <div className="p-8">
 
-<h3 className="text-3xl font-light mb-4">
+<h3
+className="
+text-[28px]
+leading-tight
+font-light
+mb-4
+text-[#6F745C]
+"
+>
 {title}
 </h3>
 
-<p className="text-[#7F7F72] leading-8">
-Professionele behandeling met aandacht voor comfort,
-verzorging en uitstraling.
+<p
+className="
+text-[#7F7F72]
+leading-8
+text-[17px]
+"
+>
+{text}
 </p>
 
 </div>
@@ -367,8 +377,8 @@ verzorging en uitstraling.
 <div className="mt-20">
 
 <img
-src="/resultaten/resultaat-6.jpg"
-alt="Behandeling"
+src="/resultaat-6.jpg"
+alt="Pedicure behandeling"
 className="
 w-full
 rounded-[2.5rem]
@@ -382,20 +392,33 @@ hover:scale-[1.01]
 </div>
 
 
+{/* SLOTTEKST */}
 <div className="mt-20 text-center">
 
-<p className="text-2xl text-[#C1978D] font-light leading-relaxed">
+<p
+className="
+text-[30px]
+text-[#C1978D]
+font-light
+leading-relaxed
+"
+>
 
 Iedere behandeling is gericht op comfort,
 verzorging en gezonde voeten.
 
 </p>
 
-<p className="mt-6 text-[#7F7F72] text-lg">
+<p
+className="
+mt-6
+text-[#7F7F72]
+text-lg
+"
+>
 Resultaten verschillen per persoon.
-</p>
 
-</div>
+</p>
 
 </div>
 
