@@ -747,10 +747,17 @@ hover:border-[#D9B0A7]
 
   <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
-    {/* IMAGE */}
-    <div className="relative">
+          {/* IMAGE */}
+<div className="relative">
 
-      <div>
+  <div
+    className="
+    rounded-[2.5rem]
+    overflow-hidden
+    shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+    bg-[#FCFAF8]
+    "
+  >
 
     <img
       src="/petra-over.jpg"
