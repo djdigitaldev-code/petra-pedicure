@@ -312,8 +312,8 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
               },
               {
                 icon: "🤍",
-                title: "Medische Pedicure",
-                text: "Professionele behandeling voor gevoelige of probleemvoeten.",
+                title: "Deluxe Pedicure",
+                text: "Een complete behandeling met extra verzorging en ontspanning voor zachte en verzorgde voeten.",
               },
               {
                 icon: "✨",
@@ -441,7 +441,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
                 <p>
                   Nagels worden vakkundig geknipt en gefreesd zodat ze
-                  weer netjes en verzorgd ogen.
+                  er weer netjes en verzorgd uitzien.
                 </p>
 
                 <p>

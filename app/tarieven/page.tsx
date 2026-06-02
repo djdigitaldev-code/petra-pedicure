@@ -656,14 +656,15 @@ duration-500
       Kilometervergoeding
     </h3>
 
-    <div className="space-y-5 text-[#7F7F72] leading-8">
+<div className="space-y-5 text-[#7F7F72] leading-8">
 
-      <p>• Binnen 20 km inbegrepen</p>
-      <p>• Daarna €0,50 per kilometer</p>
-      <p>• Buiten Almere bespreekbaar</p>
-      <p>• Mogelijk bij meerdere personen op locatie</p>
+  <p>• Binnen 20 km inbegrepen</p>
+  <p>• Daarna €0,50 per kilometer</p>
+  <p>• Buiten Almere bespreekbaar</p>
+  <p>• Mogelijk bij meerdere personen op locatie</p>
+  <p>• Eventuele parkeerkosten zijn voor rekening van de klant</p>
 
-    </div>
+</div>
 
   </div>
 

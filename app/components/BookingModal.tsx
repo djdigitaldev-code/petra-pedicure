@@ -67,7 +67,7 @@ Met vriendelijke groet,`
           </a>
 
           <a
-            href={`mailto:info@petrapedicure.nl?subject=${encodeURIComponent(
+            href={`mailto:petrapedicureaanhuis@hotmail.com?subject=${encodeURIComponent(
               `Afspraak aanvraag ${selectedTreatment}`
             )}&body=${encodeURIComponent(
 `Hallo Petra,

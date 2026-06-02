@@ -310,7 +310,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
               <p className="leading-9 text-[#7F7F72]">
                 In geval van overmacht zoals ziekte of onvoorziene omstandigheden
                 kijken wij samen naar een passende oplossing.
-                Neem hiervoor zo snel mogelijk contact met ons op.
+                Neem hiervoor zo snel mogelijk contact met mij op.
               </p>
             </div>
 

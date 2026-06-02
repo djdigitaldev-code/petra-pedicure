@@ -376,7 +376,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 
             {/* EMAIL */}
             <a
-              href="mailto:info@petrapedicure.nl"
+              href="mailto:petrapedicureaanhuis@hotmail.com"
               className="
               w-full
               max-w-[360px]
