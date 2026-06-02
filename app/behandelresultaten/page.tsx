@@ -249,7 +249,18 @@ Maak hier een afspraak
 Voor & na
 </p>
 
-<h1 className="text-[2.9rem] sm:text-6xl lg:text-7xl font-light mb-10 leading-tight">
+<h1
+className="
+text-[1.95rem]
+sm:text-[3.8rem]
+lg:text-[5rem]
+font-light
+mb-8
+leading-[1.15]
+break-words
+px-3
+"
+>
   Behandelresultaten
 </h1>
 
