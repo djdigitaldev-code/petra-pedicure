@@ -369,16 +369,16 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
       {/* FOTO PETRA */}
 <div className="max-w-6xl mx-auto mt-20 mb-8">
 
-  <div
-    className="
-    overflow-hidden
-    rounded-[2.8rem]
-    border
-    border-[#EEE8E1]
-    shadow-[0_18px_60px_rgba(0,0,0,0.05)]
-    bg-white
-    "
-  >
+<div
+  className="
+  overflow-hidden
+  rounded-[2.8rem]
+  transition-all
+  duration-700
+  hover:-translate-y-2
+  hover:shadow-[0_35px_90px_rgba(0,0,0,0.10)]
+  "
+>
 
     <img
       src="/petra-behandeling.jpg"
