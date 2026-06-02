@@ -236,7 +236,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
               Petra Pedicure
             </p>
 
-            <h1 className="text-5xl lg:text-6xl font-light text-[#6F745C]">
+            <h1 className="text-[2.7rem] sm:text-5xl lg:text-6xl font-light text-[#6F745C]">
               Annuleringsbeleid
             </h1>
 
