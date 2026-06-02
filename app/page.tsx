@@ -570,7 +570,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
 <div className="mt-14 overflow-hidden rounded-[2.5rem] border border-[#EEE8E1] shadow-sm">
 
   <img
-    src="/images/wellness-spa.png"
+    src="/wellness-spa.png"
     alt="Wellness voetenbehandeling met BCL Spa"
     className="w-full object-cover"
   />
