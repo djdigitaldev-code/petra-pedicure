@@ -114,7 +114,7 @@ md:hidden
 fixed
 top-[88px]
 left-1/2
--transform-x-1/2
+-translate-x-1/2
 w-[90%]
 bg-[#FCFAF8]/95
 backdrop-blur-xl
