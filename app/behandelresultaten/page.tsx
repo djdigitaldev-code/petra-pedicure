@@ -383,54 +383,64 @@ text-[17px]
 </div>
 
 
-{/* ONDERSTE FOTO */}
-<div className="max-w-full md:max-w-[380px] lg:max-w-[460px] mx-auto mt-16">
+{/* AFSLUITENDE KAART */}
+
+<div className="max-w-full md:max-w-[520px] lg:max-w-[620px] mx-auto mt-10">
+
+<div
+className="
+bg-white
+rounded-[2.5rem]
+overflow-hidden
+border
+border-[#EEE8E1]
+shadow-sm
+transition
+duration-500
+hover:-translate-y-1
+hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]
+lg:w-[48%]
+"
+>
 
 <img
 src="/resultaat-6.jpg"
-alt="Pedicure behandeling"
+alt="Behandeling"
 className="
 w-full
-h-auto
-object-contain
-rounded-[2.5rem]
-shadow-sm
 transition
 duration-700
-hover:scale-[1.01]
+hover:scale-[1.02]
 "
 />
 
+<div className="p-5">
+
+<h3
+className="
+text-[24px]
+font-light
+mb-4
+text-[#6F745C]
+"
+>
+Persoonlijke aandacht & verzorging
+</h3>
+
+<p
+className="
+text-[#7F7F72]
+leading-8
+text-[17px]
+"
+>
+Iedere behandeling wordt afgestemd op wat jouw voeten nodig hebben —
+met aandacht voor comfort, verzorging en ontspanning.
+</p>
+
 </div>
 
-
-{/* SLOTTEKST */}
-<div className="mt-20 text-center">
-
-<p
-className="
-text-[30px]
-text-[#C1978D]
-font-light
-leading-relaxed
-"
->
-
-Iedere behandeling is gericht op comfort,
-verzorging en gezonde voeten.
-
-</p>
-
-<p
-className="
-mt-6
-text-[#7F7F72]
-text-lg
-"
->
-Resultaten verschillen per persoon.
-
-</p>
+</div>
 
 </div>
 
