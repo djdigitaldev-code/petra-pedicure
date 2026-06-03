@@ -384,13 +384,15 @@ text-[17px]
 
 
 {/* ONDERSTE FOTO */}
-<div className="max-w-full md:max-w-[420px] lg:max-w-[520px] mx-auto mt-14">
+<div className="max-w-full md:max-w-[380px] lg:max-w-[460px] mx-auto mt-16">
 
 <img
 src="/resultaat-6.jpg"
 alt="Pedicure behandeling"
 className="
 w-full
+h-auto
+object-contain
 rounded-[2.5rem]
 shadow-sm
 transition
