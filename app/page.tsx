@@ -692,7 +692,19 @@ hover:border-[#D9B0A7]
 
 
 {/* WELLNESS FOTO */}
-<div className="mt-14 overflow-hidden rounded-[2.5rem] border border-[#EEE8E1] shadow-sm">
+<div
+className="
+mt-14
+max-w-[520px]
+lg:max-w-[560px]
+mx-auto
+overflow-hidden
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-sm
+"
+>
 
   <img
     src="/wellness-spa.png"
@@ -758,7 +770,7 @@ hover:border-[#D9B0A7]
   <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
           {/* IMAGE */}
-<div className="relative">
+<div className="relative max-w-[320px] mx-auto lg:max-w-[360px]">
 
   <div
     className="
@@ -772,14 +784,14 @@ hover:border-[#D9B0A7]
     <img
       src="/petra-over.jpg"
       alt="Petra Pedicure aan huis"
-      className="
-      w-full
-      h-auto
-      object-contain
-      transition
-      duration-700
-      hover:scale-[1.02]
-      "
+className="
+w-full
+aspect-[4/5]
+object-cover
+transition
+duration-700
+hover:scale-[1.02]
+"
     />
 
       </div>

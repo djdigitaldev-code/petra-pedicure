@@ -244,7 +244,7 @@ Maak hier een afspraak
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
           {/* IMAGE */}
-<div className="relative">
+<div className="relative max-w-[320px] mx-auto lg:max-w-[360px]">
 
   <div
     className="
@@ -258,14 +258,14 @@ Maak hier een afspraak
     <img
       src="/petra-over.jpg"
       alt="Petra Pedicure aan huis"
-      className="
-      w-full
-      h-auto
-      object-contain
-      transition
-      duration-700
-      hover:scale-[1.02]
-      "
+className="
+w-full
+aspect-[4/5]
+object-cover
+transition
+duration-700
+hover:scale-[1.02]
+"
     />
 
   </div>

@@ -629,7 +629,19 @@ hover:border-[#D9B0A7]
 
 
 {/* WELLNESS FOTO */}
-<div className="mt-14 overflow-hidden rounded-[2.5rem] border border-[#EEE8E1] shadow-sm">
+<div
+className="
+mt-14
+max-w-[520px]
+lg:max-w-[560px]
+mx-auto
+overflow-hidden
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-sm
+"
+>
 
   <img
     src="/wellness-spa.png"
