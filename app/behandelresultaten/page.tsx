@@ -444,6 +444,37 @@ met aandacht voor comfort, verzorging en ontspanning.
 
 </div>
 
+
+{/* SLOTTEKST */}
+<div className="mt-20 text-center">
+
+<p
+className="
+text-[30px]
+text-[#C1978D]
+font-light
+leading-relaxed
+"
+>
+
+Iedere behandeling is gericht op comfort,
+verzorging en gezonde voeten.
+
+</p>
+
+<p
+className="
+mt-6
+text-[#7F7F72]
+text-lg
+"
+>
+Resultaten verschillen per persoon.
+
+</p>
+
+</div>
+
 </section>
 
       {/* FOOTER */}
