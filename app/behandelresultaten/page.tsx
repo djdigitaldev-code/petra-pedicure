@@ -275,7 +275,7 @@ resultaten na professionele voetverzorging.
 
 
 {/* RESULTAAT 1 — OPENING */}
-<div className="max-w-[300px] sm:max-w-[420px] lg:max-w-3xl mx-auto mb-12">
+<div className="max-w-[220px] sm:max-w-[300px] lg:max-w-[620px] mx-auto mb-10">
 
   <img
     src="/resultaat-1.jpg"
@@ -294,7 +294,7 @@ resultaten na professionele voetverzorging.
 
 
 {/* RESULTATEN */}
-<div className="max-w-[300px] sm:max-w-[520px] lg:max-w-3xl mx-auto grid lg:grid-cols-2 gap-6">
+<div className="max-w-[220px] sm:max-w-[380px] lg:max-w-[760px] mx-auto grid lg:grid-cols-2 gap-5">
 
 {[
 [
@@ -350,7 +350,7 @@ hover:scale-[1.02]
 "
 />
 
-<div className="p-6">
+<div className="p-5">
 
 <h3
 className="
@@ -384,7 +384,7 @@ text-[17px]
 
 
 {/* ONDERSTE FOTO */}
-<div className="max-w-[300px] sm:max-w-[420px] lg:max-w-3xl mx-auto mt-12">
+<div className="max-w-[220px] sm:max-w-[300px] lg:max-w-[620px] mx-auto mt-10">
 
 <img
 src="/resultaat-6.jpg"

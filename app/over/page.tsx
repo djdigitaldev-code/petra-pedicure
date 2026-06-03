@@ -241,10 +241,10 @@ Maak hier een afspraak
       {/* CONTENT */}
       <section className="pt-[160px] pb-24 px-6 lg:px-20">
 
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[280px_1fr] gap-16 items-start">
 
           {/* IMAGE */}
-<div className="relative max-w-[300px] mx-auto lg:max-w-[340px]">
+<div className="relative max-w-[240px] mx-auto lg:max-w-[280px]">
 
   <div
     className="
