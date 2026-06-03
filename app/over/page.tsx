@@ -244,7 +244,7 @@ Maak hier een afspraak
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
           {/* IMAGE */}
-<div className="relative max-w-[320px] mx-auto lg:max-w-[360px]">
+<div className="relative max-w-[300px] mx-auto lg:max-w-[340px]">
 
   <div
     className="
@@ -260,8 +260,9 @@ Maak hier een afspraak
       alt="Petra Pedicure aan huis"
 className="
 w-full
-aspect-[4/5]
-object-cover
+h-auto
+object-contain
+object-top
 transition
 duration-700
 hover:scale-[1.02]
