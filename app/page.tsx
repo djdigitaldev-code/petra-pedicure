@@ -761,7 +761,7 @@ shadow-sm
 
 </section>
 
-{/* OVER */
+{/* OVER */}
 <section
   id="over"
   className="py-24 px-6 lg:px-20 bg-[#FCFAF8]"
