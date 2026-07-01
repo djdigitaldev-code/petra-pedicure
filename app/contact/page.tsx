@@ -179,7 +179,7 @@ Maak hier een afspraak
 <div className="mt-6 flex flex-col gap-3">
 
   <a
-    href="tel:+31612345678"
+    href="tel:+31612170943"
     className="
     bg-[#D9B0A7]
     hover:bg-[#c89b91]
@@ -196,7 +196,7 @@ Maak hier een afspraak
   </a>
 
   <a
-    href="https://wa.me/31612345678"
+    href="https://wa.me/31612170943"
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -287,7 +287,7 @@ Maak hier een afspraak
 
             {/* PHONE */}
             <a
-              href="tel:+31612345678"
+              href="tel:+31612170943"
               className="
               w-full
               max-w-[360px]
@@ -338,7 +338,7 @@ Maak hier een afspraak
 
             {/* WHATSAPP */}
             <a
-              href="https://wa.me/31612345678"
+              href="https://wa.me/31612170943"
               target="_blank"
               className="
               w-full

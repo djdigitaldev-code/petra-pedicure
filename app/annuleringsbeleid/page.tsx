@@ -178,7 +178,7 @@ Maak hier een afspraak
 <div className="mt-6 flex flex-col gap-3">
 
   <a
-    href="tel:+31612345678"
+    href="tel:+31612170943"
     className="
     bg-[#D9B0A7]
     hover:bg-[#c89b91]
@@ -195,7 +195,7 @@ Maak hier een afspraak
   </a>
 
   <a
-    href="https://wa.me/31612345678"
+    href="https://wa.me/31612170943"
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -348,17 +348,31 @@ Maak hier een afspraak
                 7. Contact voor annuleringen
               </h2>
 
-              <div className="space-y-4 text-[#7F7F72] text-lg">
+<div className="space-y-4 text-[#7F7F72] text-lg">
 
-                <p>
-                  WhatsApp: 06 12 34 56 78
-                </p>
+  <p>
+    WhatsApp:{" "}
+    <a
+      href="https://wa.me/31612170943?text=Hallo%20Petra,%0A%0AIk%20wil%20graag%20mijn%20afspraak%20op%20%5Bdatum%5D%20om%20%5Btijd%5D%20annuleren%20of%20verplaatsen.%0A%0AIk%20hoor%20graag%20welke%20mogelijkheden%20er%20zijn%20voor%20een%20nieuwe%20afspraak.%0A%0AMet%20vriendelijke%20groet,"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#C1978D] hover:underline"
+    >
+      06 12 17 09 43
+    </a>
+  </p>
 
-                <p>
-                  Telefoon: 06 12 34 56 78
-                </p>
+  <p>
+    Telefoon:{" "}
+    <a
+      href="tel:+31612170943"
+      className="text-[#C1978D] hover:underline"
+    >
+      06 12 17 09 43
+    </a>
+  </p>
 
-              </div>
+</div>
 
             </div>
 

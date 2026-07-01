@@ -43,7 +43,7 @@ export default function BookingModal({
         <div className="flex flex-col gap-5">
 
           <a
-            href={`https://wa.me/31612345678?text=${encodeURIComponent(
+            href={`https://wa.me/31612170943?text=${encodeURIComponent(
 `Hallo Petra,
 
 Ik wil graag een afspraak maken voor:
