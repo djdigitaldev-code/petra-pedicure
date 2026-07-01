@@ -845,7 +845,7 @@ duration-500
           href="/voorwaarden"
           className="hover:text-[#C1978D] transition"
         >
-          Algemene voorwaarden
+          Voorwaarden
         </a>
 
       </div>
