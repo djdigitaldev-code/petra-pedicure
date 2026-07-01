@@ -251,20 +251,19 @@ Maak hier een afspraak
             </p>
 
             <h1 className="text-5xl lg:text-6xl font-light mb-6">
-              Algemene voorwaarden
+              Privacyverklaring
             </h1>
 
-            <p className="text-lg leading-8 text-[#7F7F72]">
-              Transparante afspraken en duidelijke voorwaarden voor iedere behandeling.
-            </p>
+<p className="text-lg leading-8 text-[#7F7F72]">
+  Bij Petra Pedicure aan Huis ga ik zorgvuldig om met uw persoonsgegevens.
+  In deze privacyverklaring leest u hoe uw gegevens worden verwerkt en beschermd.
+</p>
 
           </div>
-
-          </div>
+</div>
 
           {/* CONTENT */}
 <div className="bg-white border border-[#EEE8E1] rounded-[2rem] p-8 lg:p-12 shadow-sm space-y-12">
-
   <div>
     <h2 className="text-3xl font-light mb-4">1. Wie ben ik</h2>
 
@@ -272,11 +271,23 @@ Maak hier een afspraak
       Deze privacyverklaring is van toepassing op de dienstverlening van
       Petra Pedicure aan Huis.
       <br /><br />
-      <strong>Bedrijfsnaam:</strong> Petra Pedicure aan Huis
-      <br />
-      <strong>E-mailadres:</strong> petrapedicureaanhuis@hotmail.com
-      <br />
-      <strong>Telefoonnummer:</strong> 06 12 17 09 43
+<strong>Bedrijfsnaam:</strong> Petra Pedicure aan Huis
+<br />
+<strong>E-mailadres:</strong>{" "}
+<a
+  href="mailto:petrapedicureaanhuis@hotmail.com"
+  className="hover:text-[#C1978D] transition"
+>
+  petrapedicureaanhuis@hotmail.com
+</a>
+<br />
+<strong>Telefoonnummer:</strong>{" "}
+<a
+  href="tel:+31612170943"
+  className="hover:text-[#C1978D] transition"
+>
+  06 12 17 09 43
+</a>
       <br /><br />
       Petra Pedicure aan Huis is verantwoordelijk voor de verwerking van uw
       persoonsgegevens zoals beschreven in deze privacyverklaring.
