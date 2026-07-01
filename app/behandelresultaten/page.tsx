@@ -477,7 +477,7 @@ Resultaten verschillen per persoon.
 
 </section>
 
-      {/* FOOTER */}
+{/* FOOTER */}
 <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
 
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
@@ -486,7 +486,7 @@ Resultaten verschillen per persoon.
   className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
-  Petra Pedicure
+  Petra Pedicure aan huis
 </span>
 
     <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
@@ -557,12 +557,35 @@ Resultaten verschillen per persoon.
 
   </div>
 
-  {/* COPYRIGHT */}
-  <div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center text-sm text-[#9A9A90]">
+  {/* BEDRIJFSGEGEVENS */}
+<div className="mt-8 text-center text-sm text-[#9A9A90] leading-7">
 
-    © 2026 Petra Pedicure • Alle rechten voorbehouden
+<p>
+  KVK-nummer: <span className="font-medium">42102096</span>
+</p>
 
-  </div>
+</div>
+
+{/* COPYRIGHT */}
+<div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center">
+
+  <p className="text-sm text-[#9A9A90]">
+    © 2026 Petra Pedicure aan Huis • Alle rechten voorbehouden
+  </p>
+
+  <p className="mt-3 text-xs text-[#B8B0A8] tracking-[0.08em]">
+    Website ontworpen & ontwikkeld door{" "}
+    <a
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#C1978D] hover:text-[#B8877E] transition"
+    >
+      DJ Digital Webdevelopment
+    </a>
+  </p>
+
+</div>
 
 </footer>
 
