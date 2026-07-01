@@ -546,7 +546,7 @@ Resultaten verschillen per persoon.
           href="/voorwaarden"
           className="hover:text-[#C1978D] transition"
         >
-          Algemene voorwaarden
+          Voorwaarden
         </a>
 
       </div>

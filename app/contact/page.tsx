@@ -536,7 +536,7 @@ Maak hier een afspraak
           href="/voorwaarden"
           className="hover:text-[#C1978D] transition"
         >
-          Algemene voorwaarden
+          Voorwaarden
         </a>
 
       </div>

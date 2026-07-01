@@ -454,7 +454,7 @@ hover:scale-[1.02]
           href="/voorwaarden"
           className="hover:text-[#C1978D] transition"
         >
-          Algemene voorwaarden
+          Voorwaarden
         </a>
 
       </div>
