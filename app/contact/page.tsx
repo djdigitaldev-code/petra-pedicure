@@ -261,6 +261,28 @@ Maak hier een afspraak
 
       </section>
 
+      <div className="px-6 lg:px-20 pb-12">
+
+  <div className="max-w-2xl mx-auto rounded-[2rem] border border-[#E8E2DC] bg-white/70 px-8 py-6 shadow-sm">
+
+    <h3
+      className="text-[#C1978D] text-2xl font-light"
+      style={{ fontFamily: "'Cormorant Garamond', serif" }}
+    >
+      Vanaf 1 augustus 2026 beschikbaar
+    </h3>
+
+<p className="mt-4 text-[#7F7F72] leading-8">
+  Vanaf <span className="font-semibold">1 augustus 2026</span> ga ik officieel van start als
+  <span className="font-semibold"> Petra Pedicure aan Huis</span>.
+  U kunt uw afspraak nu alvast reserveren.
+  Reserveer alvast uw gewenste datum. Ik kijk ernaar uit u vanaf 1 augustus 2026 te mogen verwelkomen.
+</p>
+
+  </div>
+
+</div>
+
       {/* CONTACT BOX */}
       <section className="px-6 lg:px-20 pb-24">
 
