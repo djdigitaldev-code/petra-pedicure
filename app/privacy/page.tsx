@@ -260,7 +260,6 @@ Maak hier een afspraak
 </p>
 
           </div>
-</div>
 
           {/* CONTENT */}
 <div className="bg-white border border-[#EEE8E1] rounded-[2rem] p-8 lg:p-12 shadow-sm space-y-12">
@@ -276,7 +275,7 @@ Maak hier een afspraak
 <strong>E-mailadres:</strong>{" "}
 <a
   href="mailto:petrapedicureaanhuis@hotmail.com"
-  className="hover:text-[#C1978D] transition"
+  className="text-[#7F7F72] hover:text-[#C1978D] transition"
 >
   petrapedicureaanhuis@hotmail.com
 </a>
@@ -284,7 +283,7 @@ Maak hier een afspraak
 <strong>Telefoonnummer:</strong>{" "}
 <a
   href="tel:+31612170943"
-  className="hover:text-[#C1978D] transition"
+  className="text-[#7F7F72] hover:text-[#C1978D] transition"
 >
   06 12 17 09 43
 </a>
@@ -409,20 +408,20 @@ Maak hier een afspraak
 
     <p>
       <strong>E-mail:</strong>{" "}
-      <a
-        href="mailto:petrapedicureaanhuis@hotmail.com"
-        className="hover:text-[#C1978D] transition"
-      >
+   <a
+  href="mailto:petrapedicureaanhuis@hotmail.com"
+  className="text-[#7F7F72] hover:text-[#C1978D] transition"
+>
         petrapedicureaanhuis@hotmail.com
       </a>
     </p>
 
     <p>
       <strong>Telefoon:</strong>{" "}
-      <a
-        href="tel:+31612170943"
-        className="hover:text-[#C1978D] transition"
-      >
+<a
+  href="tel:+31612170943"
+  className="text-[#7F7F72] hover:text-[#C1978D] transition"
+>
         06 12 17 09 43
       </a>
     </p>
@@ -430,6 +429,8 @@ Maak hier een afspraak
   </div>
 
 </div>
+
+        </div>
 
         </div>
 
