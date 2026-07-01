@@ -514,21 +514,27 @@ Maak hier een afspraak
 
       <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
 
-        <a
-          href="/annuleringsbeleid"
-          className="hover:text-[#C1978D] transition"
-        >
-          Annuleringsbeleid
-        </a>
+<a href="/annuleringsbeleid">
+  Annuleringsbeleid
+</a>
 
-        <span className="text-[#CFC7BF]">•</span>
+<span className="text-[#CFC7BF]">•</span>
 
-        <a
-          href="/voorwaarden"
-          className="hover:text-[#C1978D] transition"
-        >
-          Algemene voorwaarden
-        </a>
+<a
+  href="/privacy"
+  className="hover:text-[#C1978D] transition"
+>
+  Privacyverklaring
+</a>
+
+<span className="text-[#CFC7BF]">•</span>
+
+<a
+  href="/voorwaarden"
+  className="hover:text-[#C1978D] transition"
+>
+  Algemene voorwaarden
+</a>
 
       </div>
 
