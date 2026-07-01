@@ -80,12 +80,49 @@ export default function RootLayout({
 }: {
   children: ReactNode;
 }) {
+
+  const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  name: "Petra Pedicure aan Huis",
+  logo: "https://www.petrapedicureaanhuis.nl/logo.jpg",
+  image: "https://www.petrapedicureaanhuis.nl/logo.jpg",
+  url: "https://www.petrapedicureaanhuis.nl",
+  telephone: "+31612170943",
+  email: "petrapedicureaanhuis@hotmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Almere",
+    addressCountry: "NL",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Almere",
+  },
+  description:
+    "Professionele pedicure aan huis in Almere. Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
+  openingHours: "ByAppointment",
+  priceRange: "€€",
+  serviceType: [
+    "Pedicure aan huis",
+    "Voetverzorging",
+    "Eelt verwijderen",
+    "Likdoorns behandelen",
+    "Ingegroeide nagels behandelen",
+  ],
+};
   return (
     <html
       lang="nl"
       className={`${cormorant.variable} ${nunito.variable}`}
     >
       <body>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
         {children}
       </body>
     </html>
