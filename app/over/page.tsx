@@ -390,19 +390,19 @@ hover:scale-[1.02]
 
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
-<span
-  className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
-  style={{ fontFamily: "'Cormorant Garamond', serif" }}
->
-  Petra Pedicure aan huis
-</span>
+    <span
+      className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+      style={{ fontFamily: "'Cormorant Garamond', serif" }}
+    >
+      Petra Pedicure aan Huis
+    </span>
 
-    <p className="mt-3 text-[#7F7F72] max-w-md leading-7">
+    <p className="mt-4 mb-2 text-[#7F7F72] max-w-md leading-7">
       Professionele pedicure aan huis in Almere en omstreken
     </p>
 
     {/* SOCIALS */}
-    <div className="mt-8 flex items-center justify-center gap-8 text-3xl text-[#AEB49A]">
+    <div className="mt-6 flex items-center justify-center gap-8 text-3xl text-[#AEB49A]">
 
       <a
         href="#"
@@ -428,31 +428,34 @@ hover:scale-[1.02]
     </div>
 
     {/* LINKS */}
-    <div className="mt-6 flex justify-center">
+    <div className="mt-8 flex justify-center">
 
       <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
 
-<a href="/annuleringsbeleid">
-  Annuleringsbeleid
-</a>
+        <a
+          href="/annuleringsbeleid"
+          className="hover:text-[#C1978D] transition"
+        >
+          Annuleringsbeleid
+        </a>
 
-<span className="text-[#CFC7BF]">•</span>
+        <span className="text-[#CFC7BF]">•</span>
 
-<a
-  href="/privacy"
-  className="hover:text-[#C1978D] transition"
->
-  Privacyverklaring
-</a>
+        <a
+          href="/privacy"
+          className="hover:text-[#C1978D] transition"
+        >
+          Privacyverklaring
+        </a>
 
-<span className="text-[#CFC7BF]">•</span>
+        <span className="text-[#CFC7BF]">•</span>
 
-<a
-  href="/voorwaarden"
-  className="hover:text-[#C1978D] transition"
->
-  Algemene voorwaarden
-</a>
+        <a
+          href="/voorwaarden"
+          className="hover:text-[#C1978D] transition"
+        >
+          Algemene voorwaarden
+        </a>
 
       </div>
 
@@ -472,34 +475,34 @@ hover:scale-[1.02]
   </div>
 
   {/* BEDRIJFSGEGEVENS */}
-<div className="mt-8 text-center text-sm text-[#9A9A90] leading-7">
+  <div className="mt-8 text-center text-sm text-[#9A9A90] leading-7">
 
-<p>
-  KVK-nummer: <span className="font-medium">42102096</span>
-</p>
+    <p>
+      KVK-nummer: <span className="font-medium">42102096</span>
+    </p>
 
-</div>
+  </div>
 
-{/* COPYRIGHT */}
-<div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center">
+  {/* COPYRIGHT */}
+  <div className="mt-10 pt-6 border-t border-[#E5DDD5] text-center">
 
-  <p className="text-sm text-[#9A9A90]">
-    © 2026 Petra Pedicure aan Huis • Alle rechten voorbehouden
-  </p>
+    <p className="text-sm text-[#9A9A90]">
+      © 2026 Petra Pedicure aan Huis • Alle rechten voorbehouden
+    </p>
 
-  <p className="mt-3 text-xs text-[#B8B0A8] tracking-[0.08em]">
-    Website ontworpen & ontwikkeld door{" "}
-    <a
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#C1978D] hover:text-[#B8877E] transition"
-    >
-      DJ Digital Webdevelopment
-    </a>
-  </p>
+    <p className="mt-3 text-xs text-[#B8B0A8] tracking-[0.08em]">
+      Website ontworpen & ontwikkeld door{" "}
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#C1978D] hover:text-[#B8877E] transition"
+      >
+        DJ Digital Webdevelopment
+      </a>
+    </p>
 
-</div>
+  </div>
 
 </footer>
 
