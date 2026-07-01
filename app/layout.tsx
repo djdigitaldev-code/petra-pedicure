@@ -20,8 +20,59 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Petra Pedicure",
-  description: "Professionele pedicure aan huis in Almere",
+  metadataBase: new URL("https://www.petrapedicureaanhuis.nl"),
+
+  title: {
+    default: "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+    template: "%s | Petra Pedicure aan Huis",
+  },
+
+  description:
+    "Professionele pedicure aan huis in Almere. Voor voetverzorging, eelt, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
+
+  applicationName: "Petra Pedicure aan Huis",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: "https://www.petrapedicureaanhuis.nl",
+    siteName: "Petra Pedicure aan Huis",
+    title: "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+    description:
+      "Professionele pedicure aan huis in Almere. Persoonlijke voetverzorging bij u thuis.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Petra Pedicure aan Huis",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Petra Pedicure aan Huis",
+    description:
+      "Professionele pedicure aan huis in Almere.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
