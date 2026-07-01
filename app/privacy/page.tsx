@@ -260,6 +260,8 @@ Maak hier een afspraak
 
           </div>
 
+          </div>
+
           {/* CONTENT */}
 <div className="bg-white border border-[#EEE8E1] rounded-[2rem] p-8 lg:p-12 shadow-sm space-y-12">
 
@@ -382,19 +384,38 @@ Maak hier een afspraak
     </p>
   </div>
 
-  <div>
-    <h2 className="text-3xl font-light mb-4">
-      9. Contact
-    </h2>
+<div>
+  <h2 className="text-3xl font-light mb-4">
+    9. Contact
+  </h2>
 
-    <p className="text-[#7F7F72] leading-8">
-      Heeft u vragen over deze privacyverklaring of over de verwerking van
-      uw persoonsgegevens?
-      <br /><br />
-      E-mail: petrapedicureaanhuis@hotmail.com
-      <br />
-      Telefoon: 06 12 17 09 43
+  <p className="text-[#7F7F72] leading-8">
+    Heeft u vragen over deze privacyverklaring of over de verwerking van uw
+    persoonsgegevens?
+  </p>
+
+  <div className="mt-6 space-y-4 text-[#7F7F72]">
+
+    <p>
+      <strong>E-mail:</strong>{" "}
+      <a
+        href="mailto:petrapedicureaanhuis@hotmail.com"
+        className="hover:text-[#C1978D] transition"
+      >
+        petrapedicureaanhuis@hotmail.com
+      </a>
     </p>
+
+    <p>
+      <strong>Telefoon:</strong>{" "}
+      <a
+        href="tel:+31612170943"
+        className="hover:text-[#C1978D] transition"
+      >
+        06 12 17 09 43
+      </a>
+    </p>
+
   </div>
 
 </div>
