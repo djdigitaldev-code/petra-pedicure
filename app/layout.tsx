@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 
 import {
   Cormorant_Garamond,
@@ -120,15 +121,33 @@ export default function RootLayout({
       lang="nl"
       className={`${cormorant.variable} ${nunito.variable}`}
     >
-      <body>
-        <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(jsonLd),
-  }}
+<body>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(jsonLd),
+    }}
+  />
+
+  {children}
+
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-FHY2NJQDYN"
+  strategy="afterInteractive"
 />
-        {children}
-      </body>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FHY2NJQDYN', {
+      page_path: window.location.pathname,
+    });
+  `}
+</Script>
+</body>
     </html>
   );
 }
