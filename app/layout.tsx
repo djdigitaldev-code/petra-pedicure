@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     template: "%s | Petra Pedicure aan Huis",
   },
 
+  icons: {
+  icon: "/icon.png",
+},
+
   description:
     "Professionele pedicure aan huis in Almere. Voor voetverzorging, eelt, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
 
