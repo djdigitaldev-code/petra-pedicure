@@ -498,21 +498,24 @@ Resultaten verschillen per persoon.
     <div className="mt-6 flex items-center justify-center gap-8 text-3xl text-[#AEB49A]">
 
       <a
-        href="#"
+        href=""
         className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaFacebookF />
       </a>
 
-      <a
-        href="#"
-        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
-      >
-        <FaInstagram />
-      </a>
+<a
+  href="https://www.instagram.com/petrapedicureaanhuis/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
+  className="hover:text-[#A97870] hover:scale-110 transition duration-300"
+>
+  <FaInstagram />
+</a>
 
       <a
-        href="#"
+        href=""
         className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaLinkedinIn />
