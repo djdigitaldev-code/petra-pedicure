@@ -644,7 +644,7 @@ shadow-sm
 >
 
   <img
-    src="/wellness-spa.png"
+    src="/wellness-spa.webp"
     alt="Wellness voetenbehandeling met BCL Spa"
     className="w-full object-cover"
   />
