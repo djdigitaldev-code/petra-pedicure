@@ -43,7 +43,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   />
 
   <span
-    className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+    className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
     style={{ fontFamily: "'Cormorant Garamond', serif" }}
   >
     Petra Pedicure
@@ -68,27 +68,27 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
-<a href="/" className="hover:text-[#C1978D] transition">
+<a href="/" className="hover:text-[#A97870] transition">
   Home
 </a>
 
-            <a href="/behandelingen" className="hover:text-[#C1978D] transition">
+            <a href="/behandelingen" className="hover:text-[#A97870] transition">
               Behandelingen
             </a>
 
-            <a href="/tarieven" className="hover:text-[#C1978D] transition">
+            <a href="/tarieven" className="hover:text-[#A97870] transition">
               Tarieven
             </a>
 
-            <a href="/behandelresultaten" className="hover:text-[#C1978D] transition">
+            <a href="/behandelresultaten" className="hover:text-[#A97870] transition">
               Behandelresultaten
             </a>
 
-            <a href="/over" className="hover:text-[#C1978D] transition">
+            <a href="/over" className="hover:text-[#A97870] transition">
               Over
             </a>
 
-            <a href="/contact" className="hover:text-[#C1978D] transition">
+            <a href="/contact" className="hover:text-[#A97870] transition">
               Contact
             </a>
 
@@ -169,7 +169,7 @@ text-center
 uppercase
 tracking-[0.26em]
 text-[16px]
-text-[#C1978D]
+text-[#A97870]
 "
 >
 Maak hier een afspraak
@@ -246,7 +246,7 @@ Maak hier een afspraak
 
 <div className="text-center mb-28">
 
-<p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-5">
+<p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-5">
 Voor & na
 </p>
 
@@ -452,7 +452,7 @@ met aandacht voor comfort, verzorging en ontspanning.
 <p
 className="
 text-[30px]
-text-[#C1978D]
+text-[#A97870]
 font-light
 leading-relaxed
 "
@@ -484,7 +484,7 @@ Resultaten verschillen per persoon.
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
     <span
-      className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+      className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
       style={{ fontFamily: "'Cormorant Garamond', serif" }}
     >
       Petra Pedicure aan Huis
@@ -499,21 +499,21 @@ Resultaten verschillen per persoon.
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaFacebookF />
       </a>
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaInstagram />
       </a>
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaLinkedinIn />
       </a>
@@ -527,7 +527,7 @@ Resultaten verschillen per persoon.
 
         <a
           href="/annuleringsbeleid"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Annuleringsbeleid
         </a>
@@ -536,7 +536,7 @@ Resultaten verschillen per persoon.
 
         <a
           href="/privacy"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Privacyverklaring
         </a>
@@ -545,7 +545,7 @@ Resultaten verschillen per persoon.
 
         <a
           href="/voorwaarden"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Voorwaarden
         </a>
@@ -589,7 +589,7 @@ Resultaten verschillen per persoon.
         href="#"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[#C1978D] hover:text-[#B8877E] transition"
+        className="text-[#A97870] hover:text-[#B8877E] transition"
       >
         DJ Digital Webdevelopment
       </a>

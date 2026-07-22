@@ -43,7 +43,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   />
 
   <span
-    className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+    className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
     style={{ fontFamily: "'Cormorant Garamond', serif" }}
   >
     Petra Pedicure
@@ -68,27 +68,27 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
-<a href="/" className="hover:text-[#C1978D] transition">
+<a href="/" className="hover:text-[#A97870] transition">
   Home
 </a>
 
-            <a href="/behandelingen" className="hover:text-[#C1978D] transition">
+            <a href="/behandelingen" className="hover:text-[#A97870] transition">
               Behandelingen
             </a>
 
-            <a href="/tarieven" className="hover:text-[#C1978D] transition">
+            <a href="/tarieven" className="hover:text-[#A97870] transition">
               Tarieven
             </a>
 
-            <a href="/behandelresultaten" className="hover:text-[#C1978D] transition">
+            <a href="/behandelresultaten" className="hover:text-[#A97870] transition">
               Behandelresultaten
             </a>
 
-            <a href="/over" className="hover:text-[#C1978D] transition">
+            <a href="/over" className="hover:text-[#A97870] transition">
               Over
             </a>
 
-            <a href="/contact" className="hover:text-[#C1978D] transition">
+            <a href="/contact" className="hover:text-[#A97870] transition">
               Contact
             </a>
 
@@ -169,7 +169,7 @@ text-center
 uppercase
 tracking-[0.26em]
 text-[16px]
-text-[#C1978D]
+text-[#A97870]
 "
 >
 Maak hier een afspraak
@@ -247,7 +247,7 @@ Maak hier een afspraak
           {/* TITEL */}
           <div className="text-center mb-14">
 
-            <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+            <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
               Petra Pedicure
             </p>
 
@@ -357,7 +357,7 @@ Maak hier een afspraak
       href="https://wa.me/31612170943?text=Hallo%20Petra,%0A%0AIk%20wil%20graag%20mijn%20afspraak%20op%20%5Bdatum%5D%20om%20%5Btijd%5D%20annuleren%20of%20verplaatsen.%0A%0AIk%20hoor%20graag%20welke%20mogelijkheden%20er%20zijn%20voor%20een%20nieuwe%20afspraak.%0A%0AMet%20vriendelijke%20groet,"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-[#C1978D] hover:underline"
+      className="text-[#A97870] hover:underline"
     >
       06 12 17 09 43
     </a>
@@ -367,7 +367,7 @@ Maak hier een afspraak
     Telefoon:{" "}
     <a
       href="tel:+31612170943"
-      className="text-[#C1978D] hover:underline"
+      className="text-[#A97870] hover:underline"
     >
       06 12 17 09 43
     </a>

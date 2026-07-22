@@ -28,7 +28,7 @@ export default function BookingModal({
           ✕
         </button>
 
-        <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
+        <p className="uppercase tracking-[0.25em] text-sm text-[#A97870] mb-4">
           Afspraak aanvragen
         </p>
 

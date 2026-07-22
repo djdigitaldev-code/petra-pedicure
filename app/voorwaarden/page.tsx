@@ -43,7 +43,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   />
 
   <span
-    className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+    className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
     style={{ fontFamily: "'Cormorant Garamond', serif" }}
   >
     Petra Pedicure
@@ -68,27 +68,27 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
-<a href="/" className="hover:text-[#C1978D] transition">
+<a href="/" className="hover:text-[#A97870] transition">
   Home
 </a>
 
-            <a href="/behandelingen" className="hover:text-[#C1978D] transition">
+            <a href="/behandelingen" className="hover:text-[#A97870] transition">
               Behandelingen
             </a>
 
-            <a href="/tarieven" className="hover:text-[#C1978D] transition">
+            <a href="/tarieven" className="hover:text-[#A97870] transition">
               Tarieven
             </a>
 
-            <a href="/behandelresultaten" className="hover:text-[#C1978D] transition">
+            <a href="/behandelresultaten" className="hover:text-[#A97870] transition">
               Behandelresultaten
             </a>
 
-            <a href="/over" className="hover:text-[#C1978D] transition">
+            <a href="/over" className="hover:text-[#A97870] transition">
               Over
             </a>
 
-            <a href="/contact" className="hover:text-[#C1978D] transition">
+            <a href="/contact" className="hover:text-[#A97870] transition">
               Contact
             </a>
 
@@ -169,7 +169,7 @@ text-center
 uppercase
 tracking-[0.26em]
 text-[16px]
-text-[#C1978D]
+text-[#A97870]
 "
 >
 Maak hier een afspraak
@@ -247,7 +247,7 @@ Maak hier een afspraak
           {/* TITEL */}
           <div className="mb-16 text-center">
 
-            <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+            <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
               Petra Pedicure
             </p>
 

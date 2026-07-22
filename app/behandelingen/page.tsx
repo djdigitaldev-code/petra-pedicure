@@ -46,7 +46,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   />
 
   <span
-    className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+    className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
     style={{ fontFamily: "'Cormorant Garamond', serif" }}
   >
     Petra Pedicure
@@ -71,27 +71,27 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
-<a href="/" className="hover:text-[#C1978D] transition">
+<a href="/" className="hover:text-[#A97870] transition">
   Home
 </a>
 
-            <a href="/behandelingen" className="hover:text-[#C1978D] transition">
+            <a href="/behandelingen" className="hover:text-[#A97870] transition">
               Behandelingen
             </a>
 
-            <a href="/tarieven" className="hover:text-[#C1978D] transition">
+            <a href="/tarieven" className="hover:text-[#A97870] transition">
               Tarieven
             </a>
 
-            <a href="/behandelresultaten" className="hover:text-[#C1978D] transition">
+            <a href="/behandelresultaten" className="hover:text-[#A97870] transition">
               Behandelresultaten
             </a>
 
-            <a href="/over" className="hover:text-[#C1978D] transition">
+            <a href="/over" className="hover:text-[#A97870] transition">
               Over
             </a>
 
-            <a href="/contact" className="hover:text-[#C1978D] transition">
+            <a href="/contact" className="hover:text-[#A97870] transition">
               Contact
             </a>
 
@@ -172,7 +172,7 @@ text-center
 uppercase
 tracking-[0.26em]
 text-[16px]
-text-[#C1978D]
+text-[#A97870]
 "
 >
 Maak hier een afspraak
@@ -251,7 +251,7 @@ Maak hier een afspraak
 
         <div className="max-w-6xl mx-auto text-center">
 
-          <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+          <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
             Behandelingen
           </p>
 
@@ -310,7 +310,7 @@ Maak hier een afspraak
     {/* TITEL */}
     <div className="text-center mb-16">
 
-      <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+      <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
         Professionele voetverzorging
       </p>
 
@@ -524,7 +524,7 @@ hover:border-[#D9B0A7]
 
           <div className="text-center mb-12">
 
-            <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
+            <p className="uppercase tracking-[0.25em] text-sm text-[#A97870] mb-4">
               Specialistische voetverzorging
             </p>
 
@@ -652,7 +652,7 @@ shadow-sm
 
   <div className="bg-white px-8 py-10 text-center">
 
-    <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
+    <p className="uppercase tracking-[0.25em] text-sm text-[#A97870] mb-4">
       Wellness behandeling
     </p>
 
@@ -674,7 +674,7 @@ shadow-sm
           {/* SLOT */}
       <div className="mt-16 pt-10 border-t border-[#EEE8E1] text-center">
 
-        <p className="text-3xl text-[#C1978D] font-light mb-6">
+        <p className="text-3xl text-[#A97870] font-light mb-6">
           Je loopt weer weg op lichte,
           verzorgde en gezonde voeten
         </p>
@@ -683,11 +683,11 @@ shadow-sm
           Ik kijk ernaar uit om je te mogen verwelkomen.
         </p>
 
-        <p className="text-[#C1978D] text-2xl">
+        <p className="text-[#A97870] text-2xl">
           Liefs,
         </p>
 
-        <p className="text-[#C1978D] text-3xl font-light">
+        <p className="text-[#A97870] text-3xl font-light">
           Petra
         </p>
 
@@ -705,7 +705,7 @@ shadow-sm
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
 
     <span
-      className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
+      className="text-[24px] lg:text-4xl text-[#A97870] font-light tracking-[0.03em]"
       style={{ fontFamily: "'Cormorant Garamond', serif" }}
     >
       Petra Pedicure aan Huis
@@ -720,21 +720,21 @@ shadow-sm
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaFacebookF />
       </a>
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaInstagram />
       </a>
 
       <a
         href="#"
-        className="hover:text-[#C1978D] hover:scale-110 transition duration-300"
+        className="hover:text-[#A97870] hover:scale-110 transition duration-300"
       >
         <FaLinkedinIn />
       </a>
@@ -748,7 +748,7 @@ shadow-sm
 
         <a
           href="/annuleringsbeleid"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Annuleringsbeleid
         </a>
@@ -757,7 +757,7 @@ shadow-sm
 
         <a
           href="/privacy"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Privacyverklaring
         </a>
@@ -766,7 +766,7 @@ shadow-sm
 
         <a
           href="/voorwaarden"
-          className="hover:text-[#C1978D] transition"
+          className="hover:text-[#A97870] transition"
         >
           Voorwaarden
         </a>
@@ -810,7 +810,7 @@ shadow-sm
         href="#"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[#C1978D] hover:text-[#B8877E] transition"
+        className="text-[#A97870] hover:text-[#B8877E] transition"
       >
         DJ Digital Webdevelopment
       </a>
