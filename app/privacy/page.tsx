@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 import {
@@ -35,7 +36,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
-  <img
+  <Image
     src="/logo.jpg"
     alt="Petra Pedicure Logo"
     className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"

@@ -39,7 +39,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
-  <img
+  <Image
     src="/logo.jpg"
     alt="Petra Pedicure Logo"
     className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"
@@ -414,7 +414,7 @@ Maak hier een afspraak
 
   <div className="grid md:grid-cols-3 gap-6">
 
-    <img
+ <Image
       src="/petra-behandeling1.jpg"
       alt="Petra tijdens behandeling"
       className="
@@ -429,7 +429,7 @@ Maak hier een afspraak
       "
     />
 
-    <img
+  <Image
       src="/petra-behandeling2.jpg"
       alt="Voetbehandeling"
       className="
@@ -445,7 +445,7 @@ Maak hier een afspraak
       "
     />
 
-    <img
+    <Image
       src="/petra-behandeling3.jpg"
       alt="Petra Pedicure"
       className="
@@ -727,7 +727,7 @@ shadow-sm
 "
 >
 
-  <img
+<Image
     src="/wellness-spa.webp"
     alt="Wellness voetenbehandeling met BCL Spa"
     className="w-full object-cover"
@@ -802,7 +802,7 @@ shadow-sm
     "
   >
 
-    <img
+<Image
       src="/petra-over.jpg"
       alt="Petra Pedicure aan huis"
 className="

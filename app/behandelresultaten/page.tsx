@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 import {
@@ -35,7 +36,7 @@ ${menuOpen ? "h-screen overflow-hidden" : ""}
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
-  <img
+  <Image
     src="/logo.jpg"
     alt="Petra Pedicure Logo"
     className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-[#E8E2DC] shadow-sm"
@@ -277,7 +278,7 @@ resultaten na professionele voetverzorging.
 {/* RESULTAAT 1 — OPENING */}
 <div className="max-w-full md:max-w-[420px] lg:max-w-[520px] mx-auto mb-14">
 
-  <img
+  <Image
     src="/resultaat-1.jpg"
     alt="Behandeling pedicure"
     className="
@@ -339,7 +340,7 @@ hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]
 "
 >
 
-<img
+<Image
 src={image}
 alt={title}
 className="
@@ -403,7 +404,7 @@ lg:w-[48%]
 "
 >
 
-<img
+<Image
 src="/resultaat-6.jpg"
 alt="Behandeling"
 className="
