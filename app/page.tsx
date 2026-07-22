@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import BookingModal from "@/app/components/BookingModal";
 
@@ -306,11 +307,15 @@ Maak hier een afspraak
 
             <div className="bg-white/70 p-8 rounded-[2.5rem] shadow-2xl border border-[#E8E2DC]">
 
-              <img
-                src="/logo.jpg"
-                alt="Petra Pedicure"
-                className="w-full max-w-[260px] lg:max-w-[450px] object-cover rounded-[2rem]"
-              />
+<Image
+  src="/logo.jpg"
+  alt="Petra Pedicure"
+  width={450}
+  height={450}
+  priority
+  sizes="(max-width:768px) 260px, 450px"
+  className="w-full max-w-[260px] lg:max-w-[450px] rounded-[2rem]"
+/>
 
             </div>
 
