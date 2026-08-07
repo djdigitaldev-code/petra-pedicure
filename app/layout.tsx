@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Script from "next/script";
 import CookieBanner from "@/app/components/CookieBanner";
+import GoogleAnalytics from "@/app/components/GoogleAnalytics";
 
 import {
   Cormorant_Garamond,
@@ -134,23 +135,10 @@ export default function RootLayout({
 
 <CookieBanner />
 
-<Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-FHY2NJQDYN"
-  strategy="afterInteractive"
-/>
+<GoogleAnalytics />
 
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  </body>
 
-    gtag('config', 'G-FHY2NJQDYN', {
-      page_path: window.location.pathname,
-    });
-  `}
-</Script>
-</body>
     </html>
   );
 }
