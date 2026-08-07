@@ -367,8 +367,9 @@ Maak hier een afspraak
     <p className="text-[#7F7F72] leading-8">
       Uw persoonsgegevens worden nooit verkocht aan derden.
       Gegevens worden uitsluitend gedeeld wanneer dit noodzakelijk is voor
-      mijn dienstverlening of wanneer ik daartoe wettelijk verplicht ben.
+      mijn dienstverlening of wanneer ik daartoe wettelijk verplicht ben. </p>
 
+    <p className="text-[#7F7F72] leading-8 mt-4">
       Wanneer u toestemming geeft voor analytische cookies,
       kunnen geanonimiseerde gegevens worden verwerkt door Google Analytics.
     </p>
