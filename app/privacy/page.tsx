@@ -361,7 +361,9 @@ Maak hier een afspraak
 
   <div>
     <h2 className="text-3xl font-light mb-4">
-      6. Delen van persoonsgegevens
+      6. Delen van persoonsgegevens.
+      Wanneer u toestemming geeft voor analytische cookies,
+      kunnen geanonimiseerde gegevens worden verwerkt door Google Analytics.
     </h2>
 
     <p className="text-[#7F7F72] leading-8">
@@ -384,8 +386,31 @@ Maak hier een afspraak
   </div>
 
   <div>
+  <h2 className="text-3xl font-light mb-4">
+    8. Cookies
+  </h2>
+
+  <p className="text-[#7F7F72] leading-8">
+    Petra Pedicure aan Huis maakt gebruik van noodzakelijke cookies om de
+    website goed te laten functioneren.
+  </p>
+
+  <p className="text-[#7F7F72] leading-8 mt-4">
+    Daarnaast kan, uitsluitend nadat u hiervoor toestemming heeft gegeven,
+    Google Analytics worden gebruikt om inzicht te krijgen in het gebruik
+    van de website. Deze gegevens worden uitsluitend gebruikt om de website
+    te verbeteren.
+  </p>
+
+  <p className="text-[#7F7F72] leading-8 mt-4">
+    U kunt uw toestemming op ieder moment wijzigen of intrekken via de
+    cookie-instellingen.
+  </p>
+</div>
+
+  <div>
     <h2 className="text-3xl font-light mb-4">
-      8. Uw rechten
+      9. Uw rechten
     </h2>
 
     <p className="text-[#7F7F72] leading-8">
@@ -397,7 +422,7 @@ Maak hier een afspraak
 
 <div>
   <h2 className="text-3xl font-light mb-4">
-    9. Contact
+    10. Contact
   </h2>
 
   <p className="text-[#7F7F72] leading-8">
