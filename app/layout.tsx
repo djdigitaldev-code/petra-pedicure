@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Script from "next/script";
+import CookieBanner from "@/app/components/CookieBanner";
 
 import {
   Cormorant_Garamond,
@@ -129,7 +130,9 @@ export default function RootLayout({
     }}
   />
 
-  {children}
+{children}
+
+<CookieBanner />
 
 <Script
   src="https://www.googletagmanager.com/gtag/js?id=G-FHY2NJQDYN"
