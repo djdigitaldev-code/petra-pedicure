@@ -26,6 +26,30 @@ export default function CookieBanner() {
     setAnalyticsAllowed(savedAnalytics);
   }, []);
 
+  useEffect(() => {
+  const openPreferences = () => {
+    setShowBanner(true);
+    setShowPreferences(true);
+
+    const savedAnalytics =
+      localStorage.getItem("analytics-consent") === "true";
+
+    setAnalyticsAllowed(savedAnalytics);
+  };
+
+  window.addEventListener(
+    "openCookiePreferences",
+    openPreferences
+  );
+
+  return () => {
+    window.removeEventListener(
+      "openCookiePreferences",
+      openPreferences
+    );
+  };
+}, []);
+
   const saveChoice = (
     newChoice: Exclude<CookieChoice, null>,
     analytics: boolean

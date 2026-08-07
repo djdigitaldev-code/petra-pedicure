@@ -462,12 +462,17 @@ hover:scale-[1.02]
 
   </div>
 
-  <button
-    type="button"
-    className="mt-4 text-sm text-[#8A8A80] hover:text-[#A97870] transition"
-  >
-    Cookievoorkeuren wijzigen
-  </button>
+<button
+  type="button"
+  onClick={() =>
+    window.dispatchEvent(
+      new Event("openCookiePreferences")
+    )
+  }
+  className="mt-3 ml-8 text-sm text-[#8A8A80] hover:text-[#A97870] transition"
+>
+  Cookievoorkeuren wijzigen
+</button>
 
 </div>
 
