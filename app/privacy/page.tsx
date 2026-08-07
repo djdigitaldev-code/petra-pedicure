@@ -362,14 +362,15 @@ Maak hier een afspraak
   <div>
     <h2 className="text-3xl font-light mb-4">
       6. Delen van persoonsgegevens.
-      Wanneer u toestemming geeft voor analytische cookies,
-      kunnen geanonimiseerde gegevens worden verwerkt door Google Analytics.
     </h2>
 
     <p className="text-[#7F7F72] leading-8">
       Uw persoonsgegevens worden nooit verkocht aan derden.
       Gegevens worden uitsluitend gedeeld wanneer dit noodzakelijk is voor
       mijn dienstverlening of wanneer ik daartoe wettelijk verplicht ben.
+
+      Wanneer u toestemming geeft voor analytische cookies,
+      kunnen geanonimiseerde gegevens worden verwerkt door Google Analytics.
     </p>
   </div>
 
