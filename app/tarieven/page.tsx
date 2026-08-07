@@ -806,40 +806,48 @@ duration-500
 
     </div>
 
-    {/* LINKS */}
-    <div className="mt-8 flex justify-center">
+{/* LINKS */}
+<div className="mt-8 flex flex-col items-center">
 
-      <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
+  <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
 
-        <a
-          href="/annuleringsbeleid"
-          className="hover:text-[#A97870] transition"
-        >
-          Annuleringsbeleid
-        </a>
+    <a
+      href="/annuleringsbeleid"
+      className="hover:text-[#A97870] transition"
+    >
+      Annuleringsbeleid
+    </a>
 
-        <span className="text-[#CFC7BF]">•</span>
+    <span className="text-[#CFC7BF]">•</span>
 
-        <a
-          href="/privacy"
-          className="hover:text-[#A97870] transition"
-        >
-          Privacyverklaring
-        </a>
+    <a
+      href="/privacy"
+      className="hover:text-[#A97870] transition"
+    >
+      Privacyverklaring
+    </a>
 
-        <span className="text-[#CFC7BF]">•</span>
+    <span className="text-[#CFC7BF]">•</span>
 
-        <a
-          href="/voorwaarden"
-          className="hover:text-[#A97870] transition"
-        >
-          Voorwaarden
-        </a>
+    <a
+      href="/voorwaarden"
+      className="hover:text-[#A97870] transition"
+    >
+      Voorwaarden
+    </a>
 
-      </div>
+  </div>
 
-    </div>
+  <button
+    type="button"
+    className="mt-4 text-sm text-[#8A8A80] hover:text-[#A97870] transition"
+  >
+    Cookievoorkeuren wijzigen
+  </button>
 
+</div>
+
+  </div>
   </div>
 
   {/* SEO TEKST */}
