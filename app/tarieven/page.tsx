@@ -848,7 +848,6 @@ duration-500
 </div>
 
   </div>
-  </div>
 
   {/* SEO TEKST */}
   <div className="mt-12 pt-8 border-t border-[#E5DDD5] text-center max-w-3xl mx-auto">
