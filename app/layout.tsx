@@ -30,8 +30,14 @@ export const metadata: Metadata = {
     template: "%s | Petra Pedicure aan Huis",
   },
 
-  icons: {
-  icon: "/icon.png",
+icons: {
+  icon: [
+    {
+      url: "/favicon.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+  ],
 },
 
   description:
