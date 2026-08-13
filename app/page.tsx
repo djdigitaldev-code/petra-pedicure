@@ -1039,14 +1039,13 @@ hover:scale-[1.02]
     <p className="mt-3 text-xs text-[#B8B0A8] tracking-[0.08em]">
       Website ontworpen & ontwikkeld door{" "}
       <a
-        href=""
+        href="https://djdigitalworks.nl"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#A97870] hover:text-[#B8877E] transition"
       >
-        DJ Digital Webdevelopment
+        DJ Digital Works
       </a>
-    </p>
 
   </div>
 
