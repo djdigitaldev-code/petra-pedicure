@@ -1046,6 +1046,7 @@ hover:scale-[1.02]
       >
         DJ Digital Works
       </a>
+    </p>
 
   </div>
 
