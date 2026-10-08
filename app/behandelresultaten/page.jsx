@@ -247,27 +247,27 @@ Maak hier een afspraak
 <div className="text-center mb-28">
 
 <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-5">
-Voor & na
+  Voor & na
 </p>
 
 <h1
-className="
-text-[2.45rem]
-sm:text-6xl
-lg:text-7xl
-font-light
-mb-10
-leading-[1.15]
-px-2
-"
+  className="
+    text-[2.45rem]
+    sm:text-6xl
+    lg:text-7xl
+    font-light
+    mb-10
+    leading-[1.15]
+    px-2
+  "
 >
-  Behandelresultaten
+  Resultaten van voetverzorging
 </h1>
 
 <p className="text-lg text-[#7F7F72] leading-9 max-w-3xl mx-auto">
-Iedere voet is anders en iedere behandeling wordt afgestemd op
-wat jouw voeten nodig hebben. Hieronder zie je voorbeelden van
-resultaten na professionele voetverzorging.
+  Bekijk voorbeelden van resultaten na een professionele
+  pedicurebehandeling aan huis in Almere. Iedere behandeling
+  wordt afgestemd op wat jouw voeten nodig hebben.
 </p>
 
 </div>
@@ -280,7 +280,7 @@ resultaten na professionele voetverzorging.
 
   <Image
     src="/resultaat-1.jpg"
-    alt="Behandeling pedicure"
+    alt="Pedicurebehandeling aan huis in Almere"
     className="
       w-full
       rounded-[2.5rem]

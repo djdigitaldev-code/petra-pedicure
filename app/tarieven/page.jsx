@@ -259,8 +259,8 @@ Maak hier een afspraak
             </h1>
 
             <p className="text-lg leading-9 text-[#7F7F72] max-w-3xl mx-auto">
-                Bekijk de behandelingen en tarieven voor professionele pedicure
-                en voetverzorging aan huis in Almere. Kies de behandeling die past bij jouw wensen en behoefte.
+                Bekijk de behandelingen en tarieven voor professionele pedicureen voetverzorging aan huis in Almere. 
+                Kies de behandeling die past bij jouw wensen en behoefte.
             </p>
 
           </div>
