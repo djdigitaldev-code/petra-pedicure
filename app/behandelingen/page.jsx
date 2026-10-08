@@ -251,13 +251,13 @@ Maak hier een afspraak
 
         <div className="max-w-6xl mx-auto text-center">
 
-          <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
-            Behandelingen
-          </p>
+<p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
+  Behandelingen aan huis
+</p>
 
-          <h1 className="text-5xl lg:text-7xl font-light mb-16">
-            Verzorging met aandacht
-          </h1>
+<h2 className="text-5xl lg:text-7xl font-light mb-16">
+  Verzorging met aandacht
+</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
@@ -265,17 +265,17 @@ Maak hier een afspraak
               {
                 icon: "🌿",
                 title: "Basis Pedicure",
-                text: "Nagels knippen, verzorgen van de huid en verwijderen van eelt.",
+                text: "Nagels knippen, verzorgen van de huid en verwijderen van eelt voor verzorgde en zachte voeten.",
               },
               {
                 icon: "🤍",
                 title: "Deluxe Pedicure",
-                text: "Een complete behandeling met extra verzorging en ontspanning voor zachte en verzorgde voeten.",
+                text: "Een complete pedicurebehandeling aan huis met extra verzorging en ontspanning voor zachte en verzorgde voeten.",
               },
               {
                 icon: "✨",
                 title: "Wellness Behandeling",
-                text: "Extra ontspanning inclusief massage en verzorgende crème.",
+                text: "Een ontspannen wellnessbehandeling aan huis, inclusief massage en verzorgende crème.",
               },
             ].map((item, index) => (
               <div
@@ -319,21 +319,21 @@ Maak hier een afspraak
       </h2>
 
       <p className="text-lg leading-9 text-[#7F7F72] max-w-3xl mx-auto">
-        Gun jezelf een moment van ontspanning en verzorging
-        met een professionele pedicurebehandeling.
+        Gun jezelf een moment van ontspanning en verzorging met een professionele pedicurebehandeling aan huis in Almere.
       </p>
-</div>
 
-</div>
+      </div>
+
+      </div>
 
 {/* FOTO PETRA */}
 <div className="mt-20 mb-20">
 
   <div className="grid md:grid-cols-3 gap-6">
 
-    <Image
+ <Image
       src="/petra-behandeling1.jpg"
-      alt="Petra tijdens behandeling"
+      alt="Petra tijdens een pedicurebehandeling aan huis in Almere"
       className="
       w-full
       h-[560px]
@@ -346,9 +346,9 @@ Maak hier een afspraak
       "
     />
 
-    <Image
+  <Image
       src="/petra-behandeling2.jpg"
-      alt="Voetbehandeling"
+      alt="Professionele voetbehandeling aan huis in Almere"
       className="
       w-full
       h-[560px]
@@ -364,7 +364,7 @@ Maak hier een afspraak
 
     <Image
       src="/petra-behandeling3.jpg"
-      alt="Petra Pedicure"
+      alt="Petra van Petra Pedicure aan Huis in Almere"
       className="
       w-full
       h-[560px]
@@ -644,7 +644,7 @@ shadow-sm
 "
 >
 
-  <Image
+<Image
     src="/wellness-spa.webp"
     alt="Wellness voetenbehandeling met BCL Spa"
     className="w-full object-cover"
