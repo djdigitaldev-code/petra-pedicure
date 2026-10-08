@@ -258,7 +258,7 @@ Maak hier een afspraak
 
     <Image
       src="/petra-over.jpg"
-      alt="Petra Pedicure aan huis"
+      alt="Petra van Petra Pedicure aan Huis in Almere"
 className="
 w-full
 h-auto
@@ -278,7 +278,7 @@ hover:scale-[1.02]
           <div>
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#A97870] mb-4">
-              Over Petra
+              Over Petra Pedicure aan Huis
             </p>
 
             <h1 className="text-5xl lg:text-7xl leading-tight font-light mb-8">
@@ -288,7 +288,7 @@ hover:scale-[1.02]
             <div className="space-y-6 text-lg leading-9 text-[#7F7F72]">
 
               <p>
-                Welkom bij Petra Pedicure aan huis Almere.
+                Welkom bij Petra Pedicure aan Huis in Almere.
               </p>
 
               <p>
