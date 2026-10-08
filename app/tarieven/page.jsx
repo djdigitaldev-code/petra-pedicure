@@ -255,12 +255,12 @@ Maak hier een afspraak
             </p>
 
             <h1 className="text-5xl lg:text-7xl font-light mb-8">
-              Professionele verzorging met aandacht
+              Pedicure aan huis in Almere
             </h1>
 
             <p className="text-lg leading-9 text-[#7F7F72] max-w-3xl mx-auto">
-              Ontspannende en professionele voetverzorging aan huis,
-              afgestemd op jouw wensen en comfort.
+                Bekijk de behandelingen en tarieven voor professionele pedicure
+                en voetverzorging aan huis in Almere. Kies de behandeling die past bij jouw wensen en behoefte.
             </p>
 
           </div>
