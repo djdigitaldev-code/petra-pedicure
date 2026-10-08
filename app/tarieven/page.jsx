@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
+  const [selectedTreatment, setSelectedTreatment] = useState(null);
 
  return (
     <main
