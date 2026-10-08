@@ -1,6 +1,4 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Script from "next/script";
 import CookieBanner from "@/app/components/CookieBanner";
 import GoogleAnalytics from "@/app/components/GoogleAnalytics";
@@ -22,23 +20,24 @@ const nunito = Nunito({
   variable: "--font-body",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   metadataBase: new URL("https://www.petrapedicureaanhuis.nl"),
 
   title: {
-    default: "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+    default:
+      "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
     template: "%s | Petra Pedicure aan Huis",
   },
 
-icons: {
-  icon: [
-    {
-      url: "/favicon.png",
-      type: "image/png",
-      sizes: "32x32",
-    },
-  ],
-},
+  icons: {
+    icon: [
+      {
+        url: "/favicon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+    ],
+  },
 
   description:
     "Professionele pedicure aan huis in Almere. Voor voetverzorging, eelt, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
@@ -66,7 +65,8 @@ icons: {
     locale: "nl_NL",
     url: "https://www.petrapedicureaanhuis.nl",
     siteName: "Petra Pedicure aan Huis",
-    title: "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+    title:
+      "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
     description:
       "Professionele pedicure aan huis in Almere. Persoonlijke voetverzorging bij u thuis.",
     images: [
@@ -88,63 +88,63 @@ icons: {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
-
+export default function RootLayout({ children }) {
   const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  name: "Petra Pedicure aan Huis",
-  logo: "https://www.petrapedicureaanhuis.nl/logo.jpg",
-  image: "https://www.petrapedicureaanhuis.nl/logo.jpg",
-  url: "https://www.petrapedicureaanhuis.nl",
-  telephone: "+31612170943",
-  email: "petrapedicureaanhuis@hotmail.com",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Almere",
-    addressCountry: "NL",
-  },
-  areaServed: {
-    "@type": "City",
-    name: "Almere",
-  },
-  description:
-    "Professionele pedicure aan huis in Almere. Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
-  openingHours: "ByAppointment",
-  priceRange: "€€",
-  serviceType: [
-    "Pedicure aan huis",
-    "Voetverzorging",
-    "Eelt verwijderen",
-    "Likdoorns behandelen",
-    "Ingegroeide nagels behandelen",
-  ],
-};
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    name: "Petra Pedicure aan Huis",
+    logo: "https://www.petrapedicureaanhuis.nl/logo.jpg",
+    image: "https://www.petrapedicureaanhuis.nl/logo.jpg",
+    url: "https://www.petrapedicureaanhuis.nl",
+    telephone: "+31612170943",
+    email: "petrapedicureaanhuis@hotmail.com",
+
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Almere",
+      addressCountry: "NL",
+    },
+
+    areaServed: {
+      "@type": "City",
+      name: "Almere",
+    },
+
+    description:
+      "Professionele pedicure aan huis in Almere. Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
+
+    openingHours: "ByAppointment",
+
+    priceRange: "€€",
+
+    serviceType: [
+      "Pedicure aan huis",
+      "Voetverzorging",
+      "Eelt verwijderen",
+      "Likdoorns behandelen",
+      "Ingegroeide nagels behandelen",
+    ],
+  };
+
   return (
     <html
       lang="nl"
       className={`${cormorant.variable} ${nunito.variable}`}
     >
-<body>
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(jsonLd),
-    }}
-  />
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
 
-{children}
+        {children}
 
-<CookieBanner />
+        <CookieBanner />
 
-<GoogleAnalytics />
-
-  </body>
-
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }
