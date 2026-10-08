@@ -1,5 +1,4 @@
 import "./globals.css";
-import Script from "next/script";
 import CookieBanner from "@/app/components/CookieBanner";
 import GoogleAnalytics from "@/app/components/GoogleAnalytics";
 
@@ -25,7 +24,7 @@ export const metadata = {
 
   title: {
     default:
-      "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+      "Pedicure aan huis Almere | Petra Pedicure aan Huis",
     template: "%s | Petra Pedicure aan Huis",
   },
 
@@ -40,13 +39,9 @@ export const metadata = {
   },
 
   description:
-    "Professionele pedicure aan huis in Almere. Voor voetverzorging, eelt, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
+    "Professionele pedicure aan huis in Almere. Persoonlijke voetverzorging bij u thuis, met aandacht voor eelt, likdoorns, nagelverzorging en verzorgde voeten.",
 
   applicationName: "Petra Pedicure aan Huis",
-
-  alternates: {
-    canonical: "/",
-  },
 
   robots: {
     index: true,
@@ -66,7 +61,7 @@ export const metadata = {
     url: "https://www.petrapedicureaanhuis.nl",
     siteName: "Petra Pedicure aan Huis",
     title:
-      "Petra Pedicure aan Huis | Professionele Pedicure aan Huis in Almere",
+      "Pedicure aan huis Almere | Petra Pedicure aan Huis",
     description:
       "Professionele pedicure aan huis in Almere. Persoonlijke voetverzorging bij u thuis.",
     images: [
@@ -81,7 +76,8 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Petra Pedicure aan Huis",
+    title:
+      "Pedicure aan huis Almere | Petra Pedicure aan Huis",
     description:
       "Professionele pedicure aan huis in Almere.",
     images: ["/og-image.jpg"],
@@ -92,10 +88,14 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
+
     name: "Petra Pedicure aan Huis",
+
     logo: "https://www.petrapedicureaanhuis.nl/logo.jpg",
     image: "https://www.petrapedicureaanhuis.nl/logo.jpg",
+
     url: "https://www.petrapedicureaanhuis.nl",
+
     telephone: "+31612170943",
     email: "petrapedicureaanhuis@hotmail.com",
 
@@ -111,9 +111,7 @@ export default function RootLayout({ children }) {
     },
 
     description:
-      "Professionele pedicure aan huis in Almere. Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns, ingegroeide nagels en verzorgde voeten bij u thuis.",
-
-    openingHours: "ByAppointment",
+      "Professionele pedicure aan huis in Almere. Gespecialiseerd in voetverzorging, eelt verwijderen, likdoorns behandelen, nagelverzorging en verzorgde voeten bij u thuis.",
 
     priceRange: "€€",
 
@@ -122,6 +120,7 @@ export default function RootLayout({ children }) {
       "Voetverzorging",
       "Eelt verwijderen",
       "Likdoorns behandelen",
+      "Nagelverzorging",
       "Ingegroeide nagels behandelen",
     ],
   };
