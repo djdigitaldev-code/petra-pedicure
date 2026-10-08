@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-type CookieChoice = "accepted" | "rejected" | "custom" | null;
-
 export default function CookieBanner() {
-  const [choice, setChoice] = useState<CookieChoice>(null);
+  const [choice, setChoice] = useState(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
   const [analyticsAllowed, setAnalyticsAllowed] = useState(false);
@@ -18,7 +16,7 @@ export default function CookieBanner() {
       return;
     }
 
-    setChoice(savedChoice as CookieChoice);
+    setChoice(savedChoice);
 
     const savedAnalytics =
       localStorage.getItem("analytics-consent") === "true";
@@ -27,33 +25,30 @@ export default function CookieBanner() {
   }, []);
 
   useEffect(() => {
-  const openPreferences = () => {
-    setShowBanner(true);
-    setShowPreferences(true);
+    const openPreferences = () => {
+      setShowBanner(true);
+      setShowPreferences(true);
 
-    const savedAnalytics =
-      localStorage.getItem("analytics-consent") === "true";
+      const savedAnalytics =
+        localStorage.getItem("analytics-consent") === "true";
 
-    setAnalyticsAllowed(savedAnalytics);
-  };
+      setAnalyticsAllowed(savedAnalytics);
+    };
 
-  window.addEventListener(
-    "openCookiePreferences",
-    openPreferences
-  );
-
-  return () => {
-    window.removeEventListener(
+    window.addEventListener(
       "openCookiePreferences",
       openPreferences
     );
-  };
-}, []);
 
-  const saveChoice = (
-    newChoice: Exclude<CookieChoice, null>,
-    analytics: boolean
-  ) => {
+    return () => {
+      window.removeEventListener(
+        "openCookiePreferences",
+        openPreferences
+      );
+    };
+  }, []);
+
+  const saveChoice = (newChoice, analytics) => {
     localStorage.setItem("cookie-consent", newChoice);
     localStorage.setItem("analytics-consent", String(analytics));
 

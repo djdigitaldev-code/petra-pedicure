@@ -1,14 +1,9 @@
 "use client";
 
-type Props = {
-  selectedTreatment: string | null;
-  closeModal: () => void;
-};
-
 export default function BookingModal({
   selectedTreatment,
   closeModal,
-}: Props) {
+}) {
   if (!selectedTreatment) return null;
 
   return (
@@ -61,6 +56,7 @@ Voorkeurstijd:
 Met vriendelijke groet,`
             )}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white text-center py-5 rounded-full text-lg"
           >
             Afspraak via WhatsApp
